@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " PI",
+    " FP",
+    "M  "
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:redstone"
+    },
+    "I": {
+      "item": "minecraft:dispenser"
+    },
+    "P": {
+      "item": "minecraft:quartz"
+    },
+    "M": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "skam:handheld_dispenser",
+    "count": 1
+  }
+}

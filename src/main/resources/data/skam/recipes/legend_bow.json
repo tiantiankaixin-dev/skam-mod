@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " OA",
+    "QFN",
+    " PA"
+  ],
+  "key": {
+    "O": {
+      "item": "skam:level5_fire_core"
+    },
+    "Q": {
+      "item": "skam:level5_ice_core"
+    },
+    "P": {
+      "item": "skam:level5_lightning_core"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "F": {
+      "item": "minecraft:bow"
+    },
+    "A": {
+      "item": "skam:level_5_archer_core"
+    }
+  },
+  "result": {
+    "item": "skam:legend_bow",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IQI",
+    "IFI",
+    "III"
+  ],
+  "key": {
+    "F": {
+      "item": "skam:flame_upgrade"
+    },
+    "I": {
+      "item": "skam:burning_gold_ingot"
+    },
+    "Q": {
+      "item": "skam:level1_lightning_core"
+    }
+  },
+  "result": {
+    "item": "skam:lightning_upgrade",
+    "count": 2
+  }
+}

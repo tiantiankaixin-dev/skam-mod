@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "skam:thunder_block"
+    }
+  ],
+  "result": {
+    "item": "skam:thunder_ingot",
+    "count": 9
+  }
+}

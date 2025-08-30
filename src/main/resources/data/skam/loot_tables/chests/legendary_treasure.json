@@ -1,0 +1,115 @@
+
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1, "bonus_rolls": 0, "entries": [
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 12, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:power_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 12, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:speed_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 12, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:night_vision_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 12, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:haste_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 10, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:water_breathing_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 10, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:dolphins_grace_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 8, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:regeneration_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 8, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:health_boost_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 8, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:absorption_charm": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 8, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:sky_strike": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 8, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:air_jumper": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 8, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:cursed_trident": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 1, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:explosive_impact": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 1, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:thunder_caller": 1 }}]},
+      { "type": "minecraft:item", "name": "minecraft:enchanted_book", "weight": 1, "functions": [{ "function": "minecraft:set_enchantments", "enchantments": { "skam:time_lag_thorn": 1 }}]}
+    ], "conditions": [{ "condition": "minecraft:random_chance", "chance": 0.10 }], "comment": "池子1: 附魔书"
+    },
+    {
+      "rolls": { "min": 4, "max": 8 }, "bonus_rolls": 1, "entries": [
+      { "type": "minecraft:item", "name": "skam:frost_raw_iron", "weight": 20 },
+      { "type": "minecraft:item", "name": "skam:burning_raw_gold", "weight": 20 },
+      { "type": "minecraft:item", "name": "minecraft:diamond", "weight": 15 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_ingot", "weight": 6 },
+      { "type": "minecraft:item", "name": "minecraft:golden_apple", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:ancient_debris", "weight": 5 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_scrap", "weight": 8 },
+      { "type": "minecraft:item", "name": "skam:flame_upgrade", "weight": 1 },
+      { "type": "minecraft:item", "name": "skam:ice_upgrade", "weight": 1 },
+      { "type": "minecraft:item", "name": "skam:lightning_upgrade", "weight": 1 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_upgrade_smithing_template", "weight": 3, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 }}]}
+    ], "comment": "池子2: 材料"
+    },
+    {
+      "rolls": { "min": 1, "max": 2 }, "bonus_rolls": 0, "entries": [
+      { "type": "minecraft:item", "name": "skam:thunder_debris", "weight": 8 },
+      { "type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 1 }
+    ], "comment": "池子3: 稀有材料"
+    },
+    {
+      "rolls": 1, "bonus_rolls": 0, "entries": [
+      { "type": "minecraft:item", "name": "skam:level3_fire_core", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:level3_ice_core", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:level3_lightning_core", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:level4_fire_core", "weight": 1 },
+      { "type": "minecraft:item", "name": "skam:level4_ice_core", "weight": 1 },
+      { "type": "minecraft:item", "name": "skam:level4_lightning_core", "weight": 1 }
+    ], "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.4 } ], "comment": "池子4: 元素核心"
+    },
+    {
+      "rolls": 1, "bonus_rolls": 0, "entries": [
+      { "type": "minecraft:item", "name": "skam:burning_gold_ingot", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:frost_iron_ingot", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:thunder_ingot", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:magic_energy_gem", "weight": 1 }
+    ], "conditions": [{ "condition": "minecraft:random_chance", "chance": 0.15 }], "comment": "池子5: 极其稀有的物品"
+    },
+    {
+      "rolls": 1, "bonus_rolls": 0, "entries": [
+      { "type": "minecraft:item", "name": "minecraft:diamond_helmet", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_chestplate", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_leggings", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_boots", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_sword", "weight": 8 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_pickaxe", "weight": 8 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_helmet", "weight": 2 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_chestplate", "weight": 2 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_leggings", "weight": 2 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_boots", "weight": 2 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_sword", "weight": 1 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_pickaxe", "weight": 1 }
+    ], "conditions": [{ "condition": "minecraft:random_chance", "chance": 0.8 }],
+      "functions": [
+        { "function": "minecraft:enchant_with_levels", "levels": { "min": 20, "max": 39 }, "treasure": true },
+        {
+          "function": "skam:set_random_core_capacity",
+          "min_capacity": 3,
+          "max_capacity": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 1
+            }
+          ]
+        }
+      ], "comment": "池子6: 装备池"
+    },
+    {
+      "rolls": 1, "bonus_rolls": 0, "entries": [
+      { "type": "minecraft:item", "name": "skam:teleporting_totem", "weight": 1 },
+      { "type": "minecraft:item", "name": "skam:wind_caller_horn", "weight": 1 },
+      { "type": "minecraft:item", "name": "skam:ethereal_eye", "weight": 1 },
+      { "type": "minecraft:item", "name": "skam:block_extractor", "weight": 1 },
+      { "type": "minecraft:item", "name": "skam:soul_link_charm", "weight": 1 }
+    ], "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.05 } ], "comment": "池子7: 特殊功能物品"
+    },
+    {
+      "rolls": 1, "bonus_rolls": 0, "entries": [
+      { "type": "minecraft:item", "name": "skam:level_4_archer_core", "weight": 6 },
+      { "type": "minecraft:item", "name": "skam:purification_core_4", "weight": 6 },
+      { "type": "minecraft:item", "name": "skam:vampire_core_lvl_4", "weight": 6 },
+      { "type": "minecraft:item", "name": "skam:strength_core_lv4", "weight": 6 },
+      { "type": "minecraft:item", "name": "skam:level_5_archer_core", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:purification_core_5", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:vampire_core_lvl_5", "weight": 3 },
+      { "type": "minecraft:item", "name": "skam:strength_core_lv5", "weight": 3 }
+    ], "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.4 } ], "comment": "池子8: 技能核心 (30%概率, 3级为主, 4级稀有)"
+    }
+  ]
+}

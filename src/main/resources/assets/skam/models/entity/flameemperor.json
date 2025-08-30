@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:entity/zombie",
+  "textures": {
+    "texture": "skam:entity/emperorfire"
+  }
+}

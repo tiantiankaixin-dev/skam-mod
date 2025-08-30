@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skam:thunder_debris"
+    },
+    {
+      "item": "skam:thunder_debris"
+    },
+    {
+      "item": "skam:thunder_debris"
+    },
+    {
+      "item": "skam:thunder_debris"
+    },
+    {
+      "item": "skam:burning_gold_ingot"
+    },
+    {
+      "item": "skam:burning_gold_ingot"
+    },
+    {
+      "item": "skam:burning_gold_ingot"
+    },
+    {
+      "item": "skam:burning_gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "skam:thunder_ingot",
+    "count": 1
+  }
+}

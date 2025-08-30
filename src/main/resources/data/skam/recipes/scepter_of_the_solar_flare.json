@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    " B ",
+    " R "
+  ],
+  "key": {
+    "C": { "item": "skam:level1_fire_core" },
+    "B": { "item": "skam:burning_gold_ingot" },
+    "R": { "item": "minecraft:blaze_rod" }
+  },
+  "result": {
+    "item": "skam:scepter_of_the_solar_flare"
+  }
+}

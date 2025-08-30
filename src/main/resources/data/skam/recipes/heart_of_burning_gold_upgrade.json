@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "GCG",
+    " B "
+  ],
+  "key": {
+    "B": { "item": "skam:burning_gold_ingot" },
+    "C": { "item": "skam:level2_fire_core" },
+    "G": { "item": "minecraft:gold_block" }
+  },
+  "result": { "item": "skam:heart_of_burning_gold" }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "skam:block/forging_table_side",
+    "down": "minecraft:block/deepslate_top",
+    "up": "skam:block/forging_table_top",
+    "north": "skam:block/forging_table_side",
+    "south": "skam:block/forging_table_side",
+    "east": "skam:block/forging_table_side",
+    "west": "skam:block/forging_table_side"
+  }
+}

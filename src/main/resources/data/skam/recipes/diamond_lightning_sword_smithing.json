@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "skam:lightning_upgrade"
+  },
+  "base": {
+    "item": "skam:diamond_lightning_sword"
+  },
+  "addition": {
+    "item": "skam:level5_lightning_core"
+  },
+  "result": {
+    "item": "skam:netherite_lightning_sword"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "skam:ice_upgrade"
+  },
+  "base": {
+    "item": "skam:diamond_ice_sword"
+  },
+  "addition": {
+    "item": "skam:level5_ice_core"
+  },
+  "result": {
+    "item": "skam:netherite_ice_sword"
+  }
+}

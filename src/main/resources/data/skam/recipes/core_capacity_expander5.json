@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "UCU",
+    "PSP"
+  ],
+  "key": {
+    "I": {
+      "item": "skam:level5_fire_core"
+    },
+    "C": {
+      "item": "skam:level5_ice_core"
+    },
+    "S": {
+      "item": "skam:level5_lightning_core"
+    },
+    "P": {
+      "item": "minecraft:iron_ingot"
+    },
+    "U": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "skam:core_capacity_expander",
+    "count": 16
+  }
+}

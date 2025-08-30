@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    " C ",
+    " S "
+  ],
+  "key": {
+    "I": {
+      "item": "skam:frost_iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:iron_sword"
+    },
+    "S": {
+      "item": "skam:level1_ice_core"
+    }
+  },
+  "result": {
+    "item": "skam:chill_iron_blade"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "skam:frost_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "skam:frost_iron_block",
+    "count": 1
+  }
+}

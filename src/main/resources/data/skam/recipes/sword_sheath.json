@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " SF",
+    "S  "
+  ],
+  "key": {
+    "S": { "item": "minecraft:stick" },
+    "F": {"item": "minecraft:iron_ingot" }
+  },
+  "result": { "item": "skam:sword_sheath" }
+}

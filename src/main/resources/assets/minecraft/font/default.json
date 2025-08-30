@@ -1,0 +1,70 @@
+﻿{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "skam:font/level5_fire_core.png",
+      "ascent": 9,
+      "height": 14,
+      "chars": [
+        "\uE001"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "skam:font/level5_ice_core.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uE003"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "skam:font/level5_lightning_core.png",
+      "ascent": 9,
+      "height": 12,
+      "chars": [
+        "\uE002"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "skam:font/level_3_archer_core.png",
+      "ascent": 9,
+      "height": 12,
+      "chars": [
+        "\uE004"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "skam:font/purification_core_1.png",
+      "ascent": 9,
+      "height": 12,
+      "chars": [
+        "\uE005"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "skam:font/vampire_core_lvl_1.png",
+      "ascent": 9,
+      "height": 12,
+      "chars": [
+        "\uE006"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "skam:font/strength_core_lv2.png",
+      "ascent": 10,
+      "height": 12,
+      "chars": [
+        "\uE007"
+      ]
+    }
+  ]
+}
+
+
+

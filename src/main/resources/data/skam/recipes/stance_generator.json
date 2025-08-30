@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SCS",
+    " S "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:nether_star"
+    },
+    "S": {
+      "item": "skam:strength_core_lv4"
+    }
+  },
+  "result": {
+    "item": "skam:stance_generator"
+  }
+}

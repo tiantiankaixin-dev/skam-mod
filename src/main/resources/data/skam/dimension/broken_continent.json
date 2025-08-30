@@ -1,0 +1,11 @@
+{
+  "type": "skam:broken_continent",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "skam:plains_with_custom_ores"
+    },
+    "settings": "skam:broken_continent"
+  }
+}

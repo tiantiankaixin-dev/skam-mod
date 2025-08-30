@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skam:s3",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 10,
+    "salt": 4102123984932
+  }
+}

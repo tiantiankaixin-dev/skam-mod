@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    " C ",
+    " S "
+  ],
+  "key": {
+    "I": {
+      "item": "skam:thunder_ingot"
+    },
+    "C": {
+      "item": "minecraft:iron_sword"
+    },
+    "S": {
+      "item": "skam:level1_lightning_core"
+    }
+  },
+  "result": {
+    "item": "skam:static_dirk"
+  }
+}

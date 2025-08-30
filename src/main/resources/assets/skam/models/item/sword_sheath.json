@@ -1,0 +1,12 @@
+
+{
+  "parent": "skam:item/sword_sheath_a",
+  "overrides": [
+    {
+      "predicate": {
+        "skam:filled": 1
+      },
+      "model": "skam:item/sword_sheath_b"
+    }
+  ]
+}

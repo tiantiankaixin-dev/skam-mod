@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "skam:frost_raw_iron"
+  },
+  "result": "skam:frost_iron_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

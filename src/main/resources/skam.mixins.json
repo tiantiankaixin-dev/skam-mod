@@ -1,0 +1,36 @@
+{
+	"required": true,
+	"package": "com.example.skam.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin",
+		"DispenserBlockAccessor",
+		"PlayerEntityMixin",
+		"TridentEntityMixin",
+		"TridentEntityAccessor",
+		"PersistentProjectileEntityAccessor",
+		"TridentEntityBoomMixin",
+		"TridentEntityLightningMixin",
+		"MinecraftClientMixin",
+		"PersistentProjectileEntityMixin",
+		"TridentEntityChunkLoaderMixin",
+		"ArrowHitMixin",
+		"LivingEntityDamageMixin",
+		"LivingEntityMixin",
+		"SoulLinkDataStorageMixin",
+		"SoulLinkDamageRedirectMixin",
+		"PotionTimeAmplificationMixin",
+		"BowItemMixin",
+		"DamageModificationMixin"
+
+
+	],
+	"client": [
+		"MinecraftClientMixin"
+
+
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

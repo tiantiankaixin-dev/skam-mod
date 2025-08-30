@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:entity/drowned",
+  "textures": {
+    "texture": "skam:entity/emperorlightning"
+  }
+}

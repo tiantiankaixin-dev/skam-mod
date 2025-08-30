@@ -1,0 +1,102 @@
+plugins {
+    // 恢复使用您项目自带的变量，这是最正确的做法
+    id 'fabric-loom' version "${loom_version}"
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+base {
+    archivesName = project.archives_base_name
+}
+
+// 这是正确的 loom 配置块。
+// 它的存在本身就足以激活 Mixin 功能，不需要任何多余的内容。
+loom {
+    mixin {
+    }
+}
+
+repositories {
+    // 主仓库镜像
+    maven {
+        url 'https://maven.aliyun.com/repository/public'
+        metadataSources {
+            mavenPom()
+            artifact()
+            ignoreGradleMetadataRedirection()
+        }
+    }
+
+    // Minecraft 专用镜像
+    maven {
+        name = "Minecraft"
+        url 'https://maven.aliyun.com/repository/public'
+        content {
+            includeGroup "com.mojang"
+        }
+    }
+
+    // Fabric 专用镜像
+    maven {
+        name = "Fabric"
+        url 'https://maven.aliyun.com/repository/public'
+        content {
+            includeGroupByRegex "net\\.fabricmc.*"
+        }
+    }
+
+    // 中央仓库镜像
+    maven {
+        url 'https://maven.aliyun.com/repository/central'
+    }
+}
+
+dependencies {
+    // 保持您原有的所有依赖项不变
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.16.1'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.16.1'
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+}
+
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    // 增加UTF-8编码，防止编译时出现乱码
+    it.options.encoding = "UTF-8"
+    it.options.release = 17
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.base.archivesName.get()}" }
+    }
+}
+
+publishing {
+    publications {
+        create("mavenJava", MavenPublication) {
+            artifactId = project.archives_base_name
+            from components.java
+        }
+    }
+    repositories {
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1, "bonus_rolls": 0, "entries": [
+      { "type": "minecraft:item", "name": "minecraft:diamond_helmet", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_chestplate", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_leggings", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_boots", "weight": 10 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_sword", "weight": 8 },
+      { "type": "minecraft:item", "name": "minecraft:diamond_pickaxe", "weight": 8 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_helmet", "weight": 2 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_chestplate", "weight": 2 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_leggings", "weight": 2 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_boots", "weight": 2 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_sword", "weight": 1 },
+      { "type": "minecraft:item", "name": "minecraft:netherite_pickaxe", "weight": 1 }
+    ],
+      "functions": [
+        { "function": "minecraft:enchant_with_levels", "levels": { "min": 5, "max": 15 } },
+        { "function": "skam:set_random_core_capacity", "min_capacity": 5, "max_capacity": 8 }
+      ]
+    }
+  ]
+}

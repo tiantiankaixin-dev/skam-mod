@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IFI",
+    "III"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "I": {
+      "item": "skam:burning_gold_block"
+    }
+  },
+  "result": {
+    "item": "skam:purifying_apple",
+    "count": 1
+  }
+}

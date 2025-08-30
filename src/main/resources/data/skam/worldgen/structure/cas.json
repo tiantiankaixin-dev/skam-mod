@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "skam:cas_pool",
+  "size": 1,
+
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 60
+    },
+    "max_inclusive": {
+      "absolute": 250
+    }
+  },
+
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+
+  "max_distance_from_center": 80,
+  "biomes": "#skam:has_structure/cas",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_box",
+  "spawn_overrides": {},
+  "use_expansion_hack": false
+}

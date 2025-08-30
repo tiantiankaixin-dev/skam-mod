@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " N ",
+    "PCP",
+    " S "
+  ],
+  "key": {
+    "N": { "item": "skam:frost_iron_ingot" },
+    "C": { "item": "skam:level3_ice_core" },
+    "S": { "item": "minecraft:netherite_sword" },
+    "P": { "item": "minecraft:diamond" }
+  },
+  "result": { "item": "skam:deepfrost_rapier" }
+}

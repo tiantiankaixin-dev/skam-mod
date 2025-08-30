@@ -1,0 +1,116 @@
+{
+  "weapons": {
+    "netherite_lightning_sword": {
+      "lightning_storm": {
+        "duration_ticks": 100,
+        "strike_interval_ticks": 2,
+        "damage_per_strike": 100.0,
+        "cooldown_ticks": 1200,
+        "particle_interval_ticks": 5,
+        "base_radius": 15.0
+      },
+      "lightning_beam": {
+        "cooldown_ticks": 80,
+        "range": 50.0,
+        "potion_damage": 20.0,
+        "lightning_damage": 10.0,
+        "aoe_on_block_radius": 2.0
+      }
+    },
+    "netherite_ice_sword": {
+      "ice_domain": {
+        "duration_ticks": 600,
+        "cooldown_ticks": 1200,
+        "damage_interval_ticks": 4,
+        "damage": 30.0,
+        "slowness_duration_ticks": 100,
+        "slowness_amplifier": 4,
+        "base_radius": 20.0,
+        "particle_interval_ticks": 5,
+        "snowball_particle_interval_ticks": 24
+      },
+      "ice_explosion_beam": {
+        "cooldown_ticks": 160,
+        "range": 100.0,
+        "damage": 50.0,
+        "aoe_radius": 5.0,
+        "slowness_duration_ticks": 100,
+        "slowness_amplifier": 2
+      }
+    },
+    "netherite_fire_sword": {
+      "fire_domain": {
+        "duration_ticks": 600,
+        "cooldown_ticks": 1200,
+        "damage_interval_ticks": 20,
+        "damage": 20.0,
+        "fire_duration_ticks": 100,
+        "base_radius": 20.0,
+        "particle_interval_ticks": 5
+      },
+      "explosion_beam": {
+        "cooldown_ticks": 160,
+        "range": 100.0,
+        "damage": 50.0,
+        "aoe_radius": 5.0,
+        "fire_duration_ticks": 80
+      }
+    },
+    "diamond_lightning_sword": {
+      "lightning_storm": {
+        "duration_ticks": 80,
+        "strike_interval_ticks": 3,
+        "damage_per_strike": 75.0,
+        "cooldown_ticks": 1000,
+        "particle_interval_ticks": 5,
+        "base_radius": 15.0
+      },
+      "lightning_beam": {
+        "cooldown_ticks": 100,
+        "range": 45.0,
+        "potion_damage": 15.0,
+        "lightning_damage": 5.0,
+        "aoe_on_block_radius": 1.5
+      }
+    },
+    "diamond_ice_sword": {
+      "ice_domain": {
+        "duration_ticks": 500,
+        "cooldown_ticks": 1200,
+        "damage_interval_ticks": 5,
+        "damage": 27.0,
+        "slowness_duration_ticks": 80,
+        "slowness_amplifier": 3,
+        "base_radius": 15.0,
+        "particle_interval_ticks": 5,
+        "snowball_particle_interval_ticks": 24
+      },
+      "ice_explosion_beam": {
+        "cooldown_ticks": 160,
+        "range": 90.0,
+        "damage": 45.0,
+        "aoe_radius": 4.0,
+        "slowness_duration_ticks": 80,
+        "slowness_amplifier": 1
+      }
+    },
+    "diamond_fire_sword": {
+      "fire_domain": {
+        "duration_ticks": 300,
+        "cooldown_ticks": 800,
+        "damage_interval_ticks": 30,
+        "damage": 15.0,
+        "fire_duration_ticks": 60,
+        "base_radius": 15.0,
+        "particle_interval_ticks": 10
+      },
+      "explosion_beam": {
+        "cooldown_ticks": 120,
+        "range": 80.0,
+        "damage": 30.0,
+        "aoe_radius": 3.5,
+        "fire_duration_ticks": 50
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TAT",
+    "TCT",
+    "TMT"
+  ],
+  "key": {
+    "A": { "item": "minecraft:netherite_ingot" },
+    "C": { "item": "skam:level3_lightning_core" },
+    "T": { "item": "skam:thunder_ingot" },
+    "M": { "item": "minecraft:water_bucket" }
+  },
+  "result": { "item": "skam:staff_of_thunder" }
+}

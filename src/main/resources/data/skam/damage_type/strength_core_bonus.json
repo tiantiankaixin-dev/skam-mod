@@ -1,0 +1,11 @@
+{
+  "message_id": "skam.strength_core",
+  "exhaustion": 0.0,
+  "scaling": "never",
+  "effects": "hurt",
+  "death_message_type": "default",
+  "bypasses_armor": true,
+  "bypasses_enchantments": true,
+  "bypasses_effects": true,
+  "bypasses_invulnerability": true
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "skam:item/storm_scepter"
+  },
+  "display": {
+    "gui": {
+      "scale": [1.2, 1.2, 1.2]
+    }
+  }
+}

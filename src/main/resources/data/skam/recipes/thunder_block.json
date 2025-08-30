@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "skam:thunder_ingot"
+    }
+  },
+  "result": {
+    "item": "skam:thunder_block",
+    "count": 1
+  }
+}

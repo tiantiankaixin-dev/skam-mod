@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "skam:burning_raw_gold"
+  },
+  "result": "skam:burning_gold_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

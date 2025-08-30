@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "skam:item/scepter_of_the_solar_flare"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "skam:item/deepfrost_rapier"
+  },
+  "display": {
+    "gui": {
+      "scale": [1.2, 1.2, 1.2]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "PFP",
+    "III"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:golden_apple"
+    },
+    "I": {
+      "item": "minecraft:gold_nugget"
+    },
+    "P": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "skam:time_amplifying_fruit",
+    "count": 1
+  }
+}

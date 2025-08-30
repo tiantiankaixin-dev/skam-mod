@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NN ",
+    "NCP",
+    " S "
+  ],
+  "key": {
+    "N": { "item": "skam:burning_gold_ingot" },
+    "C": { "item": "skam:level3_fire_core" },
+    "S": { "item": "minecraft:netherite_axe" },
+    "P": { "item": "minecraft:netherite_ingot" }
+  },
+  "result": {
+    "item": "skam:molten_greataxe",
+    "count": 1
+  }
+}

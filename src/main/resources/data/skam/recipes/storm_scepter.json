@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " FC",
+    " SF",
+    "S  "
+  ],
+  "key": {
+    "C": { "item": "skam:level1_lightning_core" },
+    "S": { "item": "minecraft:blaze_rod" },
+    "F": {"item": "minecraft:netherite_ingot" }
+  },
+  "result": { "item": "skam:storm_scepter" }
+}

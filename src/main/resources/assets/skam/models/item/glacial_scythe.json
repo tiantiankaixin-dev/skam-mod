@@ -1,0 +1,11 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "skam:item/glacial_scythe"
+  },
+  "display": {
+    "gui": {
+      "scale": [1.2, 1.2, 1.2]
+    }
+  }
+}

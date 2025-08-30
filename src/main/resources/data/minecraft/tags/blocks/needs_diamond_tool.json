@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "skam:burning_gold_ore",
+    "skam:frost_iron_ore",
+    "skam:thunder_alloy_ore",
+    "skam:burning_gold_block",
+    "skam:frost_iron_block",
+    "skam:thunder_block"
+  ]
+}

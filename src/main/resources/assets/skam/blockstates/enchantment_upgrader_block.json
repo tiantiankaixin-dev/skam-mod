@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "skam:block/enchantment_upgrader_block" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skam:lightningemperor",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 60,
+    "separation": 26,
+    "salt": 293482990
+  }
+}

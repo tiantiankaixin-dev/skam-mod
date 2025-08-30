@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NCN",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "N": { "item": "minecraft:netherite_ingot" },
+    "C": { "item": "skam:level1_fire_core" },
+    "S": { "item": "minecraft:diamond" }
+  },
+  "result": { "item": "skam:heartfire_furnace_pick" }
+}
+

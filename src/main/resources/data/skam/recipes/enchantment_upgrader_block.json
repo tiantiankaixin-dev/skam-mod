@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "DED",
+    "LAL",
+    "OOO"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:enchanting_table"
+    },
+    "L": {
+      "item": "minecraft:lapis_block"
+    },
+    "A": {
+      "item": "minecraft:anvil"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "skam:enchantment_upgrader_block"
+  }
+}

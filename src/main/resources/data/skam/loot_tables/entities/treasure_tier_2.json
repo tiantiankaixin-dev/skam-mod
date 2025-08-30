@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:iron_sword" },
+        { "type": "minecraft:item", "name": "minecraft:iron_axe" },
+        { "type": "minecraft:item", "name": "minecraft:iron_helmet" },
+        { "type": "minecraft:item", "name": "minecraft:iron_chestplate" },
+        { "type": "minecraft:item", "name": "minecraft:iron_leggings" },
+        { "type": "minecraft:item", "name": "minecraft:iron_boots" },
+        { "type": "minecraft:item", "name": "minecraft:chainmail_helmet" },
+        { "type": "minecraft:item", "name": "minecraft:chainmail_chestplate" },
+        { "type": "minecraft:item", "name": "minecraft:chainmail_leggings" },
+        { "type": "minecraft:item", "name": "minecraft:chainmail_boots" },
+        { "type": "minecraft:item", "name": "minecraft:bow" },
+        { "type": "minecraft:item", "name": "minecraft:shield" }
+      ],
+      "functions": [
+        { "function": "minecraft:enchant_with_levels", "levels": { "min": 5, "max": 15 } },
+        { "function": "skam:set_random_core_capacity", "min_capacity": 3, "max_capacity": 5 }
+      ]
+    }
+  ]
+}

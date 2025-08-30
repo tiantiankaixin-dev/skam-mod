@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "skam:cas",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "spacing": 32,
+    "separation": 8,
+    "salt": 168468512,
+
+    "spread_type": "linear",
+
+    "heightmap": "WORLD_SURFACE_WG"
+  }
+}
