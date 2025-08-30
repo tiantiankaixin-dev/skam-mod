@@ -87,26 +87,26 @@ public class SkamAttributeConfig {
 
         // --- 修改开始: 为每个核心设置默认属性和等级上限 ---
         CoreAttributes fireDefaults = new CoreAttributes();
-        fireDefaults.max_level = 5;
+        fireDefaults.max_level = 666;
         fireDefaults.damage_per_level = 1.0;
         fireDefaults.attack_knockback_per_level = 0.1;
         INSTANCE.attributes.put(CoreType.FIRE, fireDefaults);
 
         CoreAttributes lightningDefaults = new CoreAttributes();
-        lightningDefaults.max_level = 5;
+        lightningDefaults.max_level = 666666;
         lightningDefaults.attack_speed_per_level = 0.1;
         lightningDefaults.movement_speed_per_level = 0.005;
         INSTANCE.attributes.put(CoreType.LIGHTNING, lightningDefaults);
 
         CoreAttributes iceDefaults = new CoreAttributes();
-        iceDefaults.max_level = 5;
+        iceDefaults.max_level = 666666;
         iceDefaults.health_per_level = 1.0;
         iceDefaults.armor_per_level = 0.5;
         iceDefaults.knockback_resistance_per_level = 0.05;
         INSTANCE.attributes.put(CoreType.ICE, iceDefaults);
 
         CoreAttributes archerDefaults = new CoreAttributes();
-        archerDefaults.max_level = 5;
+        archerDefaults.max_level = 666666;
         archerDefaults.projectile_damage_per_level = 0.25;
         archerDefaults.projectile_speed_per_level = 0.02;
         INSTANCE.attributes.put(CoreType.ARCHER, archerDefaults);
