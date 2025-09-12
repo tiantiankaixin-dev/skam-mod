@@ -328,6 +328,9 @@
 
   "message.skam.legendary_bow_cooldown": "§c传说之弓§r技能还需 §b%s§r 秒冷却",
 
+  "tooltip.skam.magic_infusion_info": "可放入魔能灌注台，突破附魔上限",
+  "tooltip.skam.infuser.usage": "将附魔工具和魔能神石放入其中",
+  "tooltip.skam.infuser.instructions": "(左侧附魔书，中间附魔装备，右侧魔能神石，按下按钮突破魔咒上限）",
 
 
 "item.skam.block_extractor": "方块置换器",

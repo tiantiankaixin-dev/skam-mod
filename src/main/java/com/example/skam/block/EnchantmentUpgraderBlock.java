@@ -33,11 +33,11 @@ public class EnchantmentUpgraderBlock extends BlockWithEntity implements BlockEn
         // 检查玩家当前是否按下了 SHIFT 键
         if (Screen.hasShiftDown()) {
             // 如果按下了 SHIFT，显示详细说明
-            tooltip.add(Text.literal("将附魔工具和魔能神石放入其中").formatted(Formatting.AQUA));
-            tooltip.add(Text.literal("(左侧附魔书，中间附魔装备，右侧魔能神石，按下按钮突破魔咒上限）").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.skam.magic_infusion_info").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.skam.infuser.usage").formatted(Formatting.AQUA));
         } else {
             // 如果没有按下 SHIFT，显示提示信息
-            tooltip.add(Text.literal("按下 [SHIFT] 查看更多信息").formatted(Formatting.YELLOW));
+            tooltip.add(Text.translatable("tooltip.skam.infuser.instructions").formatted(Formatting.YELLOW));
         }
 
         super.appendTooltip(stack, world, tooltip, context);

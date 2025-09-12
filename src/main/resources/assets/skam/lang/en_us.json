@@ -364,6 +364,9 @@
 
   "message.skam.legendary_bow_cooldown": "§cLegendary Bow§r ability is on cooldown for §b%s§r seconds.",
 
+  "tooltip.skam.magic_infusion_info": "Can be placed in the Magic Infuser to break enchantment limits",
+  "tooltip.skam.infuser.usage": "Place enchanted tools and Mana Stones inside",
+  "tooltip.skam.infuser.instructions": "(Enchanted book on the left, enchanted item in the middle, Mana Stone on the right, press the button to break enchantment limits)",
 
 
 
