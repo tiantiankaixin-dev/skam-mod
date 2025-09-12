@@ -103,7 +103,7 @@ public class CoreTooltipSystem {
                                 .append(Text.literal(String.valueOf(type.getIconChar())).formatted(coreThemeColor))
                                 .append(" ")
                                 .append(Text.translatable(type.getNameTranslationKey()).formatted(coreThemeColor))
-                                .append(Text.literal(" (等级 " + effectiveLevel + ")").formatted(Formatting.DARK_GRAY));
+                                .append(Text.literal(" (Level " + effectiveLevel + ")").formatted(Formatting.DARK_GRAY));
 
                         if (effectiveLevel >= type.getMaxLevel() && type.getMaxLevel() != Integer.MAX_VALUE) {
                             coreNameLine.append(Text.literal(" [MAX]").formatted(Formatting.GOLD, Formatting.BOLD));

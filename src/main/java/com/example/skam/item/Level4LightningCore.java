@@ -19,9 +19,8 @@ public class Level4LightningCore extends Item implements ICoreItem {
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("tooltip.skam.l4lightning").formatted(Formatting.GRAY));
-        tooltip.add(Text.literal("§7用于在锻造台将 §f雷霆神剑").formatted(Formatting.GRAY));
-        tooltip.add(Text.literal("§7升级为 §b雷霆征伐之刃").formatted(Formatting.GRAY));
-
+        tooltip.add(Text.translatable("tooltip.skam.upgrade.thunder_sword_1").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.skam.upgrade.thunder_sword_2").formatted(Formatting.GRAY));
     }
     @Override
     public boolean hasGlint(ItemStack stack) {

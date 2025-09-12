@@ -90,9 +90,6 @@ public class StormScepterItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        // --- 优化点 2：使用 .formatted() 方法，代码更清晰 ---
-        tooltip.add(Text.literal("右键点击方块，召唤一道闪电").formatted(Formatting.GRAY));
-        // 如果想增加一行描述距离
-        tooltip.add(Text.literal("最大距离: 128格").formatted(Formatting.DARK_GRAY));
-    }
+        tooltip.add(Text.translatable("tooltip.skam.summon_lightning").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.skam.max_distance").formatted(Formatting.DARK_GRAY)); }
 }

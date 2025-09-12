@@ -30,7 +30,7 @@ public class EmberStingItem extends SwordItem {
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("§7使目标多倍燃烧").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.skam.multi_burn").formatted(Formatting.GRAY));
 
     }
 }

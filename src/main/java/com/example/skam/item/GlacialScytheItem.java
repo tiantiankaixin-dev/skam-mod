@@ -60,7 +60,7 @@ public class GlacialScytheItem extends HoeItem {
     }
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("§7一把特殊的锄头，右键可以一次性耕种3x3的土地").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.skam.hoe_3x3").formatted(Formatting.GRAY));
 
     }
 }

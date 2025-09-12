@@ -30,7 +30,7 @@ public class DeepfrostRapierItem extends SwordItem {
     }
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("§7攻击时，会给敌人施加强力的缓慢和虚弱效果").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.skam.strong_debuffs").formatted(Formatting.GRAY));
 
     }
 }

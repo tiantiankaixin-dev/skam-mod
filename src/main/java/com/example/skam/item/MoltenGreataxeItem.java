@@ -51,7 +51,7 @@ public class MoltenGreataxeItem extends AxeItem {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("伤害命中的敌人时，必定使其燃烧，并有几率产生小范围的火焰爆炸").formatted(Formatting.DARK_RED));
+        tooltip.add(Text.translatable("tooltip.skam.fire_explosion").formatted(Formatting.DARK_RED));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

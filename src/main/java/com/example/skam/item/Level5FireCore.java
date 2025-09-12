@@ -24,9 +24,8 @@ public class Level5FireCore extends Item implements ICoreItem {
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("tooltip.skam.l5fire").formatted(Formatting.GRAY));
-        tooltip.add(Text.literal("§7用于在锻造台将 §b火域征伐之刃").formatted(Formatting.GRAY));
-        tooltip.add(Text.literal("§7升级为 §4火域裁决").formatted(Formatting.GRAY));
-    }
+        tooltip.add(Text.translatable("tooltip.skam.upgrade.fire_blade_1").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.skam.upgrade.fire_blade_2").formatted(Formatting.GRAY));  }
     @Override
     public CoreType getCoreType() {
         return CoreType.FIRE;

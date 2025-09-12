@@ -106,18 +106,17 @@ public class SwordSheathItem extends Item {
     }
 
     public static String getOwnerNbtKey(PlayerEntity player) {
-       return player.getGameProfile().getName() + "的武器";
+        return Text.translatable("item.skam.owner_weapon", player.getGameProfile().getName()).getString();
     }
-
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (stack.getSubNbt(TRIDENT_KEY) != null) {
             tooltip.add(Text.translatable("item.skam.sword_sheath.contains_trident").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("右键投掷武器").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.skam.throw_weapon").formatted(Formatting.AQUA));
         } else {
             tooltip.add(Text.translatable("item.skam.sword_sheath.empty").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("右键打开武器绑定栏位，放入三叉戟后即可绑定（三叉戟带有带有“御剑”附魔可以左键控制）").formatted(Formatting.AQUA));
-            tooltip.add(Text.translatable("shift加右键召回武器").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.skam.sheath_bind_instructions").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.skam.sheath_recall").formatted(Formatting.AQUA));
         }
     }
 

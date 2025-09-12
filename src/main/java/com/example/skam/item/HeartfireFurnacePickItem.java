@@ -59,7 +59,7 @@ public class HeartfireFurnacePickItem extends PickaxeItem {
     }
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("§7挖掘矿石时，直接掉落烧炼好的矿物（如铁锭、金锭）").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.skam.auto_smelt").formatted(Formatting.GRAY));
 
     }
 }

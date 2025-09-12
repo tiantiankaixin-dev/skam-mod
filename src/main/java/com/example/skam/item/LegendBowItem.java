@@ -163,8 +163,9 @@ public class LegendBowItem extends BowItem {
         }
 
         long remainingTicks = endTime - currentTime;
-        player.sendMessage(Text.literal("§c传说之弓§r技能还需 §b" + String.format("%.1f", remainingTicks / 20.0) + "§r 秒冷却"), true);
-        return false;
+        String remainingSeconds = String.format("%.1f", remainingTicks / 20.0);
+        player.sendMessage(Text.translatable("message.skam.legendary_bow_cooldown", remainingSeconds), true);
+      return false;
     }
 
     @Override
@@ -184,8 +185,8 @@ public class LegendBowItem extends BowItem {
     }
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("shift加右键在箭矢落点处释放审判技能").formatted(Formatting.GOLD));
-        tooltip.add(Text.literal("别靠太近~").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.skam.judgment_skill").formatted(Formatting.GOLD));
+        tooltip.add(Text.translatable("tooltip.skam.judgment_warning").formatted(Formatting.GRAY));
 
     }
 

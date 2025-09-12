@@ -23,8 +23,7 @@ public class MagicEnergyGemItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("可放入魔能灌注台，突破附魔上限").formatted(Formatting.AQUA));
-        super.appendTooltip(stack, world, tooltip, context);
+            tooltip.add(Text.translatable("tooltip.skam.magic_infusion").formatted(Formatting.AQUA));  super.appendTooltip(stack, world, tooltip, context);
     }
 }
 

@@ -66,12 +66,11 @@ public class OreDetectorItem extends Item {
                 }
             }
 
-           if (oreCount.isEmpty()) {
-                user.sendMessage(Text.literal("半径50格内未发现任何矿石").formatted(Formatting.GRAY), false);
+            if (oreCount.isEmpty()) {
+                user.sendMessage(Text.translatable("message.skam.no_ores_found").formatted(Formatting.GRAY), false);
             } else {
-                user.sendMessage(Text.literal("矿石探测结果:").formatted(Formatting.GOLD), false);
-                for (Map.Entry<String, Integer> entry : oreCount.entrySet()) {
-                    user.sendMessage(Text.literal("- " + entry.getKey() + ": " + entry.getValue() + " 个")
+                user.sendMessage(Text.translatable("message.skam.ore_scan_results").formatted(Formatting.GOLD), false);    for (Map.Entry<String, Integer> entry : oreCount.entrySet()) {
+                    user.sendMessage(Text.literal("- " + entry.getKey() + ": " + entry.getValue() + " ")
                             .formatted(Formatting.GREEN), false);
                 }
             }

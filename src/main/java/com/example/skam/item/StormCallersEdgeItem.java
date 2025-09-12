@@ -30,7 +30,6 @@ public class StormCallersEdgeItem extends SwordItem {
     }
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("§7攻击敌人时，会为使用者提供短暂的速度爆发").formatted(Formatting.GRAY));
-
+        tooltip.add(Text.translatable("tooltip.skam.speed_burst").formatted(Formatting.GRAY));
     }
 }

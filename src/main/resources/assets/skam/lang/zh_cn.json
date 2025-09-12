@@ -282,7 +282,55 @@
   "tooltip.skam.netherite_lightning_sword.enchant.description": "  §7雷暴风暴半径增加 §a%s §7格",
   "tooltip.skam.netherite_lightning_sword.enchant.header": "§d领域扩张 %s 级",
 
-  "item.skam.block_extractor": "方块置换器",
+
+  "tooltip.skam.level": " (等级 %s)",
+
+  "tooltip.skam.upgrade.fire_sword_1": "§7用于在锻造台将 §f火域神剑",
+  "tooltip.skam.upgrade.fire_sword_2": "§7升级为 §b火域征伐之刃",
+  "tooltip.skam.upgrade.snow_sword_1": "§7用于在锻造台将 §f雪域神剑",
+  "tooltip.skam.upgrade.snow_sword_2": "§7升级为 §b雪域征伐之刃",
+  "tooltip.skam.upgrade.thunder_sword_1": "§7用于在锻造台将 §f雷霆神剑",
+  "tooltip.skam.upgrade.thunder_sword_2": "§7升级为 §b雷霆征伐之刃",
+  "tooltip.skam.upgrade.fire_blade_1": "§7用于在锻造台将 §b火域征伐之刃",
+  "tooltip.skam.upgrade.fire_blade_2": "§7升级为 §4火域裁决",
+  "tooltip.skam.upgrade.snow_blade_1": "§7用于在锻造台将 §b雪域征伐之刃",
+  "tooltip.skam.upgrade.snow_blade_2": "§7升级为 §4雪域裁决",
+  "tooltip.skam.upgrade.thunder_blade_1": "§7用于在锻造台将 §b雷霆征伐之刃",
+  "tooltip.skam.upgrade.thunder_blade_2": "§7升级为 §4雷霆裁决",
+
+  "tooltip.skam.magic_infusion": "可放入魔能灌注台，突破附魔上限",
+
+  "message.skam.no_ores_found": "半径50格内未发现任何矿石。",
+  "message.skam.ore_scan_results": "矿石探测结果:",
+  "message.skam.staff_cooldown": "法杖冷却中... 剩余 %.1f 秒",
+  "message.skam.no_treasure_mobs": "没有可用的宝藏怪物！请检查配置文件。",
+  "message.skam.log_hint": "提示: 详细错误请查看客户端日志。",
+
+  "tooltip.skam.cooldown": "冷却中: %.1fs",
+  "tooltip.skam.speed_burst": "§7攻击敌人时，会为使用者提供短暂的速度爆发",
+  "tooltip.skam.summon_lightning": "右键点击方块，召唤一道闪电",
+  "tooltip.skam.max_distance": "最大距离: 128格",
+
+  "tooltip.skam.throw_weapon": "右键投掷武器",
+  "tooltip.skam.sheath_bind_instructions": "右键打开武器绑定栏位，放入三叉戟后即可绑定（三叉戟带有带有“御剑”附魔可以左键控制）",
+  "tooltip.skam.sheath_recall": "shift加右键召回武器",
+
+  "item.skam.owner_weapon": "%s的武器",
+
+  "tooltip.skam.chance_slowness_1": "§7攻击概率给予对方缓慢1",
+  "tooltip.skam.multi_burn": "§7使目标多倍燃烧",
+  "tooltip.skam.hoe_3x3": "§7一把特殊的锄头，右键可以一次性耕种3x3的土地",
+  "tooltip.skam.auto_smelt": "§7挖掘矿石时，直接掉落烧炼好的矿物（如铁锭、金锭）",
+  "tooltip.skam.fire_explosion": "伤害命中的敌人时，必定使其燃烧，并有几率产生小范围的火焰爆炸",
+  "tooltip.skam.strong_debuffs": "§7攻击时，会给敌人施加强力的缓慢和虚弱效果",
+  "tooltip.skam.judgment_skill": "shift加右键在箭矢落点处释放审判技能",
+  "tooltip.skam.judgment_warning": "别靠太近~",
+
+  "message.skam.legendary_bow_cooldown": "§c传说之弓§r技能还需 §b%s§r 秒冷却",
+
+
+
+"item.skam.block_extractor": "方块置换器",
   "item.skam.chill_iron_blade": "冰结之刃",
   "item.skam.deepfrost_rapier": "急冻刺剑",
   "item.skam.ember_sting": "余烬之刺",

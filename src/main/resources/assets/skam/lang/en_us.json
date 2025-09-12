@@ -266,6 +266,7 @@
   "tooltip.skam.netherite_ice_sword.description.domain_radius": "  Forms a frost domain with a %s block radius around the player.",
   "tooltip.skam.netherite_ice_sword.enchant.description": "  Increases Ice Domain radius by %s blocks.",
   "tooltip.skam.netherite_ice_sword.enchant.header": "Domain Expansion Level %s",
+
   "item.skam.netherite_lightning_sword": "Netherite Lightning Sword",
   "tooltip.skam.netherite_lightning_sword.ability.beam": "Right-click: Lightning Beam",
   "tooltip.skam.netherite_lightning_sword.ability.storm": "Sneak + Right-click: Lightning Storm",
@@ -314,7 +315,59 @@
   "item.skam.heart_of_burning_gold": "Heart of Burning Gold",
   "item.skam.heart_of_burning_gold.tooltip_fire": "Right-click while on fire to extinguish flames and heal.",
   "item.skam.heart_of_burning_gold.tooltip_smelt": "Right-click to smelt ores in your inventory for 3x yield.",
-  "item.skam.purifying_apple": "Purifying Apple",
+
+
+
+    "tooltip.skam.level": " (Level %s)",
+
+    "tooltip.skam.upgrade.fire_sword_1": "Used in a Smithing Table to upgrade §fIron Fire Sword",
+    "tooltip.skam.upgrade.fire_sword_2": "to §bDiamond Fire Sword",
+    "tooltip.skam.upgrade.snow_sword_1": "Used in a Smithing Table to upgrade §fIron Ice Sword",
+    "tooltip.skam.upgrade.snow_sword_2": "to §bDiamond Ice Sword",
+    "tooltip.skam.upgrade.thunder_sword_1": "Used in a Smithing Table to upgrade §fIron Lightning Sword",
+    "tooltip.skam.upgrade.thunder_sword_2": "to §bDiamond Lightning Sword",
+    "tooltip.skam.upgrade.fire_blade_1": "Used in a Smithing Table to upgrade §bDiamond Fire Sword",
+    "tooltip.skam.upgrade.fire_blade_2": "to §4Netherite Fire Sword",
+    "tooltip.skam.upgrade.snow_blade_1": "Used in a Smithing Table to upgrade §bDiamond Ice Sword",
+    "tooltip.skam.upgrade.snow_blade_2": "to §4Netherite Ice Sword",
+    "tooltip.skam.upgrade.thunder_blade_1": "Used in a Smithing Table to upgrade §bDiamond Lightning Sword",
+    "tooltip.skam.upgrade.thunder_blade_2": "to §4Netherite Lightning Sword",
+
+    "tooltip.skam.magic_infusion": "Can be placed in the Magic Infusion Table to break enchantment limits",
+
+    "message.skam.no_ores_found": "No ores found within a 50-block radius.",
+    "message.skam.ore_scan_results": "Ore Scan Results:",
+    "message.skam.staff_cooldown": "Staff is on cooldown... %.1f seconds remaining.",
+    "message.skam.no_treasure_mobs": "No available treasure mobs! Please check the configuration file.",
+    "message.skam.log_hint": "Hint: Check the client log for detailed errors.",
+
+    "tooltip.skam.cooldown": "Cooldown: %.1fs",
+    "tooltip.skam.speed_burst": "§7Hitting an enemy provides the user with a short burst of speed.",
+    "tooltip.skam.summon_lightning": "Right-click a block to summon a lightning strike.",
+    "tooltip.skam.max_distance": "Max distance: 128 blocks.",
+
+    "tooltip.skam.throw_weapon": "Right-click to throw weapon",
+    "tooltip.skam.sheath_bind_instructions": "Right-click to open binding slot. Place a Trident to bind it (Tridents with \"Sword Control\" enchantment can be controlled with left-click).",
+    "tooltip.skam.sheath_recall": "Shift + Right-click to recall weapon.",
+
+    "item.skam.owner_weapon": "%s's Weapon",
+
+
+  "tooltip.skam.chance_slowness_1": "§7Chance to apply Slowness I on hit.",
+  "tooltip.skam.multi_burn": "§7Inflicts multi-burn on the target.",
+  "tooltip.skam.hoe_3x3": "§7A special hoe that tills a 3x3 area on right-click.",
+  "tooltip.skam.auto_smelt": "§7Automatically smelts mined ores into ingots.",
+  "tooltip.skam.fire_explosion": "Guaranteed to ignite enemies on hit, with a chance to create a small fiery explosion.",
+  "tooltip.skam.strong_debuffs": "§7Applies powerful Slowness and Weakness effects on hit.",
+  "tooltip.skam.judgment_skill": "Shift + Right-click to cast Judgment where the arrow lands.",
+  "tooltip.skam.judgment_warning": "Don't get too close~",
+
+  "message.skam.legendary_bow_cooldown": "§cLegendary Bow§r ability is on cooldown for §b%s§r seconds.",
+
+
+
+
+"item.skam.purifying_apple": "Purifying Apple",
   "item.skam.soul_link_charm": "Soul Link Charm",
   "item.skam.stance_generator": "Stance Generator",
   "item.skam.teleporting_totem": "Totem of Displacement",

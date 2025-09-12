@@ -127,7 +127,7 @@ public class ScepterOfTheSolarFlareItem extends Item {
             }
 
             // 计算冷却条的填充比例 (0-13)
-            return Math.round(((float)remainingTicks / (float)COOLDOWN_DURATION_TICKS) * 13.0F);
+            return Math.round(((float) remainingTicks / (float) COOLDOWN_DURATION_TICKS) * 13.0F);
         }
         return 0;
     }
@@ -150,19 +150,19 @@ public class ScepterOfTheSolarFlareItem extends Item {
                 if (currentTime < cooldownEndTick) {
                     long remainingTicks = cooldownEndTick - currentTime;
                     double remainingSeconds = remainingTicks / 20.0;
-                    tooltip.add(Text.literal(String.format("冷却中: %.1fs", remainingSeconds)).formatted(Formatting.GRAY));
-                }
+                    tooltip.add(Text.translatable("tooltip.skam.cooldown", remainingSeconds).formatted(Formatting.GRAY)); }
             }
         }
     }
 
-    @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.BOW;
+        @Override
+        public UseAction getUseAction (ItemStack stack){
+            return UseAction.BOW;
+        }
+
+        @Override
+        public int getMaxUseTime (ItemStack stack){
+            return 72000;
+        }
     }
 
-    @Override
-    public int getMaxUseTime(ItemStack stack) {
-        return 72000;
-    }
-}
