@@ -31,6 +31,7 @@ public class ModEnchantments {
     public static final Enchantment CURSED_TRIDENT = new CursedTridentEnchantment();
     public static final Enchantment SKY_STRIKE = Registry.register(Registries.ENCHANTMENT, new Identifier(SkamMod.MOD_ID, "sky_strike"), new SkyStrikeEnchantment());
     public static final Enchantment AIR_JUMPER = new AirJumperEnchantment();
+    public static final Enchantment TRIDENT_RIDER = register("trident_rider", new TridentRiderEnchantment());
 
 
     private static Enchantment register(String name, Enchantment enchantment) {

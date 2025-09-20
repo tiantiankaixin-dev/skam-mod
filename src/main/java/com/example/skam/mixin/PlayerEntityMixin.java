@@ -33,23 +33,23 @@ public abstract class PlayerEntityMixin implements IAuraAccessor {
         PlayerEntity player = (PlayerEntity) (Object) this;
         World world = player.getWorld();
         if (!world.isClient) {
-           if (this.lastLightPos != null) {
+            if (this.lastLightPos != null) {
                 if (world.getBlockState(this.lastLightPos).isOf(Blocks.LIGHT)) {
                     world.setBlockState(this.lastLightPos, Blocks.AIR.getDefaultState());
                 }
                 this.lastLightPos = null;
             }
-             if (this.auraTicks > 0) {
+            if (this.auraTicks > 0) {
                 BlockPos currentPos = player.getBlockPos().up();
                 if (world.getBlockState(currentPos).isAir()) {
-                 BlockState lightState = Blocks.LIGHT.getDefaultState().with(Properties.LEVEL_15, 15);
+                    BlockState lightState = Blocks.LIGHT.getDefaultState().with(Properties.LEVEL_15, 15);
                     world.setBlockState(currentPos, lightState);
                     this.lastLightPos = currentPos;
                 }
             }
         }
 
-       if (this.auraTicks > 0) {
+        if (this.auraTicks > 0) {
             this.auraTicks--;
 
             if (world.isClient) {

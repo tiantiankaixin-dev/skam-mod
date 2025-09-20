@@ -139,7 +139,7 @@ public class ModItemGroups {
                             List<Enchantment> charms = List.of(
                                     ModEnchantments.POWER_CHARM, ModEnchantments.NIGHT_VISION_CHARM,
                                     ModEnchantments.HASTE_CHARM, ModEnchantments.WATER_BREATHING_CHARM, ModEnchantments.DOLPHINS_GRACE_CHARM,
-                                    ModEnchantments.REGENERATION_CHARM, ModEnchantments.ABSORPTION_CHARM
+                                    ModEnchantments.REGENERATION_CHARM, ModEnchantments.ABSORPTION_CHARM,ModEnchantments.TRIDENT_RIDER
                             );
 
                             for (Enchantment charm : charms) {

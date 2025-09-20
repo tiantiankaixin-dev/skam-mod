@@ -28,7 +28,7 @@ public class TimedTreasureMobRule {
 
     private static int timer = 0;
     // 将间隔改长一点，比如5秒，避免刷屏和过于频繁的检查
-    private static final int TRIGGER_INTERVAL_TICKS = 3600;
+    private static final int TRIGGER_INTERVAL_TICKS = 2400;
 
     public static void register() {
         ServerTickEvents.END_SERVER_TICK.register(TimedTreasureMobRule::onServerTick);
@@ -130,6 +130,7 @@ public class TimedTreasureMobRule {
             TreasureSummonerItem.equipMobAndSetDrops(world, targetMob, lootTableId);
             targetMob.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, -1, 0, false, false));
             TreasureSummonerItem.setupTreasureTeam(world, targetMob, glowColor);
+            targetMob.setGlowing(true);
 
             Text message = Text.translatable("message.skam.enemy_appeared").formatted(Formatting.RED, Formatting.BOLD);
             world.getPlayers().forEach(p -> {

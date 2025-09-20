@@ -21,7 +21,11 @@
 		"SoulLinkDamageRedirectMixin",
 		"PotionTimeAmplificationMixin",
 		"BowItemMixin",
-		"DamageModificationMixin"
+		"DamageModificationMixin",
+		"TridentItemMixin",
+		"TridentPlayerRideMixin",
+		"EntityMixin"
+
 
 
 	],

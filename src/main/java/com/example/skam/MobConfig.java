@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class MobConfig {
+    public static boolean canRideTrident = true;
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
 

@@ -10,7 +10,6 @@ import com.example.skam.SkamMod;
 import com.example.skam.client.model.FireGodArmorModel;
 import com.example.skam.client.render.*;
 import com.example.skam.client.screen.HandheldDispenserScreen;
-import com.example.skam.client.SwordSheathScreen;
 import com.example.skam.enchantment.ModEnchantments;
 import com.example.skam.entity.ModEntities;
 import com.example.skam.entity.client.FloatingShipRenderer;
@@ -18,8 +17,6 @@ import com.example.skam.hud.SoulLinkHud;
 import com.example.skam.item.ModItems;
 import com.example.skam.networking.ModMessages;
 import com.example.skam.screen.EnchantmentUpgraderScreen;
-import com.example.skam.screen.ModScreenHandlers;
-import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -29,7 +26,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
-import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.render.entity.EmptyEntityRenderer;
@@ -113,6 +109,8 @@ public class SkamModClient implements ClientModInitializer {
         ArmorRenderer.register(new IceGodArmorRenderer(), ModItems.ICE_GOD_HELMET, ModItems.ICE_GOD_CHESTPLATE, ModItems.ICE_GOD_LEGGINGS, ModItems.ICE_GOD_BOOTS);
         ArmorRenderer.register(new ThunderGodArmorRenderer(), ModItems.THUNDER_GOD_HELMET, ModItems.THUNDER_GOD_CHESTPLATE, ModItems.THUNDER_GOD_LEGGINGS, ModItems.THUNDER_GOD_BOOTS);
     }
+
+
 
     /**
      * 新增方法：注册物品Tooltip渲染回调事件

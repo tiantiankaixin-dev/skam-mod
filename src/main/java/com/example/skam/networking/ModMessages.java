@@ -18,7 +18,7 @@ import net.minecraft.util.math.Vec3d;
  * LOG: 它负责将网络数据包ID与处理逻辑关联起来，其本身的功能是正确的。
  */
 public class ModMessages {
-
+    public static final Identifier TRIDENT_MOUNT_SYNC_ID = new Identifier("skam", "trident_mount_sync");
     public static final Identifier RETARGET_TRIDENT_ID = new Identifier(SkamMod.MOD_ID, "retarget_trident");
     public static final Identifier AIR_JUMP_ID = new Identifier(SkamMod.MOD_ID, "air_jump");
 

@@ -41,7 +41,7 @@ public class EnchantmentUpgraderScreenHandler extends ScreenHandler {
 
     @Override
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
-       ItemStack newStack = ItemStack.EMPTY;
+        ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
         if (slot != null && slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
@@ -72,8 +72,8 @@ public class EnchantmentUpgraderScreenHandler extends ScreenHandler {
             if (itemStack.isEmpty() || bookStack.isEmpty() || gemStack.isEmpty()) return false;
             if (!bookStack.isOf(Items.ENCHANTED_BOOK) || !gemStack.isOf(ModItems.MAGIC_ENERGY_GEM)) return false;
             Map<Enchantment, Integer> bookEnchantments = EnchantmentHelper.get(bookStack);
-           if (bookEnchantments.size() != 1) return false;
-           Enchantment bookEnchantment = bookEnchantments.keySet().iterator().next();
+            if (bookEnchantments.size() != 1) return false;
+            Enchantment bookEnchantment = bookEnchantments.keySet().iterator().next();
             int bookLevel = bookEnchantments.get(bookEnchantment);
             Map<Enchantment, Integer> itemEnchantments = EnchantmentHelper.get(itemStack);
             if (!itemEnchantments.containsKey(bookEnchantment)) return false;
@@ -84,7 +84,7 @@ public class EnchantmentUpgraderScreenHandler extends ScreenHandler {
             Map<Enchantment, Integer> newEnchantments = itemEnchantments;
             newEnchantments.put(bookEnchantment, itemLevel + 1);
             EnchantmentHelper.set(newEnchantments, itemStack);
- inventory.markDirty();
+            inventory.markDirty();
 
             return true;
         }
@@ -105,3 +105,4 @@ public class EnchantmentUpgraderScreenHandler extends ScreenHandler {
         }
     }
 }
+
