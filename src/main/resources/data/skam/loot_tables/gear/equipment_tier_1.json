@@ -1,0 +1,283 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.wooden_sword" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:10}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 15 },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_speed", "name": "Swiftness", "amount": { "min": 0.05, "max": 0.15 }, "operation": "multiply_base", "slot": "mainhand", "id": "11111111-aaaa-4aaa-aaaa-111111111111" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.stone_sword" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:11}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 15 },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_damage", "name": "Heavy Hitter", "amount": { "min": 0.05, "max": 0.15 }, "operation": "multiply_base", "slot": "mainhand", "id": "11111111-bbbb-4bbb-bbbb-111111111111" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_sword",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.golden_sword" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:13}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 25, "treasure": true },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_speed", "name": "Gilded Haste", "amount": { "min": 0.25, "max": 0.40 }, "operation": "multiply_base", "slot": "mainhand", "id": "22222222-cccc-4ccc-cccc-222222222222" },
+              { "attribute": "minecraft:generic.luck", "name": "Golden Fortune", "amount": { "min": 1.0, "max": 2.0 }, "operation": "addition", "slot": "mainhand", "id": "22222222-dddd-4ddd-dddd-222222222222" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_axe",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.wooden_axe" },{ "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:20}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 15 },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_damage", "name": "Lumberjack's Strength", "amount": { "min": 0.10, "max": 0.20 }, "operation": "multiply_base", "slot": "mainhand", "id": "55555555-aaaa-4aaa-aaaa-555555555555" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.stone_axe" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:21}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 15 },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_damage", "name": "Barbarian's Might", "amount": { "min": 0.15, "max": 0.25 }, "operation": "multiply_base", "slot": "mainhand", "id": "55555555-bbbb-4bbb-bbbb-555555555555" },
+              { "attribute": "minecraft:generic.attack_knockback", "name": "Heavy Swing", "amount": { "min": 0.5, "max": 1.0 }, "operation": "addition", "slot": "mainhand", "id": "55555555-cccc-4ccc-cccc-555555555555" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_axe",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.golden_axe" },  { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line1" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:23}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 25, "treasure": true },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_damage", "name": "Golden Power", "amount": { "min": 0.15, "max": 0.25 }, "operation": "multiply_base", "slot": "mainhand", "id": "66666666-bbbb-4bbb-bbbb-666666666666" },
+              { "attribute": "minecraft:generic.luck", "name": "Golden Fortune", "amount": { "min": 2.0, "max": 3.0 }, "operation": "addition", "slot": "mainhand", "id": "66666666-cccc-4ccc-cccc-666666666666" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "weight": 10,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.leather_helmet" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.04, "max": 0.08 }, "operation": "multiply_base", "slot": "head", "id": "1a1a1a1a-1111-1111-3001-1a1a1a1a1a1a" },
+              { "attribute": "minecraft:generic.armor", "name": "Bonus Armor", "amount": { "min": 0.5, "max": 1.0 }, "operation": "addition", "slot": "head", "id": "1b1b1b1b-1111-1111-3001-1b1b1b1b1b1b" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "weight": 10,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.leather_chestplate" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.08, "max": 0.15 }, "operation": "multiply_base", "slot": "chest", "id": "2a2a2a2a-2222-2222-3002-2a2a2a2a2a2a" },
+              { "attribute": "minecraft:generic.armor_toughness", "name": "Bonus Toughness", "amount": { "min": 0.5, "max": 1.0 }, "operation": "addition", "slot": "chest", "id": "2b2b2b2b-2222-2222-3002-2b2b2b2b2b2b" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "weight": 10,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.leather_leggings" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.06, "max": 0.12 }, "operation": "multiply_base", "slot": "legs", "id": "3a3a3a3a-3333-3333-3003-3a3a3a3a3a3a" },
+              { "attribute": "minecraft:generic.armor", "name": "Bonus Armor", "amount": { "min": 1.0, "max": 1.5 }, "operation": "addition", "slot": "legs", "id": "3b3b3b3b-3333-3333-3003-3b3b3b3b3b3b" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "weight": 10,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.leather_boots" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.movement_speed", "name": "Bonus Speed", "amount": { "min": 0.05, "max": 0.10 }, "operation": "multiply_base", "slot": "feet", "id": "4a4a4a4a-4444-4444-3004-4a4a4a4a4a4a" },
+              { "attribute": "minecraft:generic.luck", "name": "Lucky Treads", "amount": { "min": 0.5, "max": 1.0 }, "operation": "addition", "slot": "feet", "id": "4b4b4b4b-4444-4444-3004-4b4b4b4b4b4b" },
+              { "attribute": "minecraft:generic.knockback_resistance", "name": "Stability", "amount": { "min": 0.05, "max": 0.10 }, "operation": "addition", "slot": "feet", "id": "4c4c4c4c-4444-4444-3004-4c4c4c4c4c4c" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_helmet",
+          "weight": 8,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.chainmail_helmet" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.10, "max": 0.18 }, "operation": "multiply_base", "slot": "head", "id": "5a5a5a5a-1111-1111-3005-5a5a5a5a5a5a" },
+              { "attribute": "minecraft:generic.armor", "name": "Bonus Armor", "amount": { "min": 1.0, "max": 2.0 }, "operation": "addition", "slot": "head", "id": "5b5b5b5b-1111-1111-3005-5b5b5b5b5b5b" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "weight": 8,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.chainmail_chestplate" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.15, "max": 0.25 }, "operation": "multiply_base", "slot": "chest", "id": "6a6a6a6a-2222-2222-3006-6a6a6a6a6a6a" },
+              { "attribute": "minecraft:generic.armor_toughness", "name": "Bonus Toughness", "amount": { "min": 1.0, "max": 1.5 }, "operation": "addition", "slot": "chest", "id": "6b6b6b6b-2222-2222-3006-6b6b6b6b6b6b" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings",
+          "weight": 8,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.chainmail_leggings" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.12, "max": 0.20 }, "operation": "multiply_base", "slot": "legs", "id": "7a7a7a7a-3333-3333-3007-7a7a7a7a7a7a" },
+              { "attribute": "minecraft:generic.armor", "name": "Bonus Armor", "amount": { "min": 1.5, "max": 2.5 }, "operation": "addition", "slot": "legs", "id": "7b7b7b7b-3333-3333-3007-7b7b7b7b7b7b" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_boots",
+          "weight": 8,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.chainmail_boots" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.movement_speed", "name": "Bonus Speed", "amount": { "min": 0.08, "max": 0.12 }, "operation": "multiply_base", "slot": "feet", "id": "8a8a8a8a-4444-4444-3008-8a8a8a8a8a8a" },
+              { "attribute": "minecraft:generic.armor", "name": "Bonus Armor", "amount": { "min": 1.0, "max": 1.5 }, "operation": "addition", "slot": "feet", "id": "8b8b8b8b-4444-4444-3008-8b8b8b8b8b8b" },
+              { "attribute": "minecraft:generic.knockback_resistance", "name": "Stability", "amount": { "min": 0.10, "max": 0.15 }, "operation": "addition", "slot": "feet", "id": "8c8c8c8c-4444-4444-3008-8c8c8c8c8c8c" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_helmet",
+          "weight": 5,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.golden_helmet" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.20, "max": 0.30 }, "operation": "multiply_base", "slot": "head", "id": "9a9a9a9a-1111-4111-a111-9a9a9a9a9a9a" },
+              { "attribute": "minecraft:generic.armor", "name": "Bonus Armor", "amount": { "min": 1.5, "max": 2.5 }, "operation": "addition", "slot": "head", "id": "9b9b9b9b-1111-4111-b111-9b9b9b9b9b9b" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "weight": 5,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.golden_chestplate" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.25, "max": 0.40 }, "operation": "multiply_base", "slot": "chest", "id": "aaaaaaaa-2222-4222-a222-aaaaaaaaaaaa" },
+              { "attribute": "minecraft:generic.armor_toughness", "name": "Bonus Toughness", "amount": { "min": 1.5, "max": 2.0 }, "operation": "addition", "slot": "chest", "id": "bbbbbbbb-2222-4222-b222-bbbbbbbbbbbb" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_leggings",
+          "weight": 5,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.golden_leggings" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Bonus Health", "amount": { "min": 0.22, "max": 0.35 }, "operation": "multiply_base", "slot": "legs", "id": "cccccccc-3333-4333-a333-cccccccccccc" },
+              { "attribute": "minecraft:generic.armor", "name": "Bonus Armor", "amount": { "min": 2.0, "max": 3.0 }, "operation": "addition", "slot": "legs", "id": "dddddddd-3333-4333-b333-dddddddddddd" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_boots",
+          "weight": 5,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s%2$s", "with": [{ "translate": "item.minecraft.golden_boots" }, { "translate": "lore.skam.tier1_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier1_line1" }, { "translate": "lore.skam.tier1_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.movement_speed", "name": "Bonus Speed", "amount": { "min": 0.10, "max": 0.15 }, "operation": "multiply_base", "slot": "feet", "id": "eeeeeeee-4444-4444-a444-eeeeeeeeeeee" },
+              { "attribute": "minecraft:generic.luck", "name": "Golden Fortune", "amount": { "min": 1.0, "max": 2.0 }, "operation": "addition", "slot": "feet", "id": "ffffffff-4444-4444-b444-ffffffffffff" },
+              { "attribute": "minecraft:generic.knockback_resistance", "name": "Stability", "amount": { "min": 0.15, "max": 0.20 }, "operation": "addition", "slot": "feet", "id": "10101010-4444-4444-c444-101010101010" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_randomly" }
+          ]
+        }
+
+
+      ]
+    }
+  ]
+}
+

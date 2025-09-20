@@ -28,7 +28,7 @@ public class TimedTreasureMobRule {
 
     private static int timer = 0;
     // 将间隔改长一点，比如5秒，避免刷屏和过于频繁的检查
-    private static final int TRIGGER_INTERVAL_TICKS = 3600; // 5 seconds (20 ticks/sec * 5 sec)
+    private static final int TRIGGER_INTERVAL_TICKS = 3600;
 
     public static void register() {
         ServerTickEvents.END_SERVER_TICK.register(TimedTreasureMobRule::onServerTick);
@@ -51,7 +51,7 @@ public class TimedTreasureMobRule {
         Collections.shuffle(playerList);
         for (ServerPlayerEntity player : playerList) {
             ServerWorld world = player.getServerWorld();
-            Box searchArea = new Box(player.getBlockPos()).expand(128.0);
+            Box searchArea = new Box(player.getBlockPos()).expand(64.0);
             List<HostileEntity> nearbyHostileMobs = world.getEntitiesByClass(HostileEntity.class, searchArea, (mob) -> true);
 
             // ==================== 【关键修改点】 ====================
@@ -133,7 +133,7 @@ public class TimedTreasureMobRule {
 
             Text message = Text.translatable("message.skam.enemy_appeared").formatted(Formatting.RED, Formatting.BOLD);
             world.getPlayers().forEach(p -> {
-                if (p.squaredDistanceTo(targetMob) < 128 * 128) {
+                if (p.squaredDistanceTo(targetMob) < 64 * 64) {
                     p.sendMessage(message, false);
                 }
             });

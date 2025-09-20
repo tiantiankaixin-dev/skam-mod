@@ -10,7 +10,7 @@ public class ModLootFunctionTypes {
     // 创建一个静态实例，ID为 "skam:set_random_core_capacity"
     public static final LootFunctionType SET_RANDOM_CORE_CAPACITY = new LootFunctionType(new SetRandomCoreCapacityFunction.Serializer());
 
-    /**
+     /**
      * 注册方法
      */
     public static void register() {

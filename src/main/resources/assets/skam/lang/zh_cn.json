@@ -389,5 +389,18 @@
   "item.skam.ice_upgrade": "冰霜升级模板",
   "item.skam.lightning_upgrade": "雷霆升级模板",
   "item.your_mod_id.frost_blade": "极冬之怒",
-  "item.your_mod_id.staff_of_thunder": "风暴神话"
+  "item.your_mod_id.staff_of_thunder": "风暴神话",
+
+  "lore.skam.tier1_suffix": " §b(稀有的)",
+  "lore.skam.tier2_suffix": " §d(珍藏的)",
+  "lore.skam.tier3_suffix": " §6(传说的)",
+
+  "lore.skam.tier1_line1": "§7这是一个拥有少量核心容量的装备。",
+  "lore.skam.tier1_line2": "§7它能为你提供微小的增益。",
+
+  "lore.skam.tier2_line1": "§7这是一个蕴含着神秘力量的装备。",
+  "lore.skam.tier2_line2": "§7它能为你提供可观的增益。",
+
+  "lore.skam.tier3_line1": "§7这是一件由远古工匠打造的传奇装备。",
+  "lore.skam.tier3_line2": "§7它能为你提供强大的增益。"
 }

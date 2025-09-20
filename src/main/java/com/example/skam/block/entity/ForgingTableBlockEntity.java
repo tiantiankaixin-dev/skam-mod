@@ -76,14 +76,10 @@ public class ForgingTableBlockEntity extends BlockEntity implements ExtendedScre
     // 现在都已经被移除，因为它们的功能已由 updateResult 中的 API 调用取代。
 
     private boolean isValidInput(ItemStack stack) {
-        Item item = stack.getItem();
-        return item instanceof ToolItem ||
-                item instanceof SwordItem ||
-                item instanceof ArmorItem ||
-                item instanceof BowItem ||
-                item instanceof ShieldItem ||
-                item instanceof TridentItem;
+        // 允许所有非空物品进行升级
+        return !stack.isEmpty();
     }
+
 
     // --- 以下是方块实体和物品栏的标准实现方法 (无改动) ---
     @Override

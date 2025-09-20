@@ -59,14 +59,10 @@ public class ForgingTableScreenHandler extends ScreenHandler {
     }
 
     private boolean isInputItem(ItemStack stack) {
-        Item item = stack.getItem();
-        return item instanceof ToolItem ||
-                item instanceof SwordItem ||
-                item instanceof ArmorItem ||
-                item instanceof BowItem ||
-                item instanceof ShieldItem ||
-                item instanceof TridentItem;
+        // 允许所有物品进行升级
+        return !stack.isEmpty();
     }
+
 
     @Override
     public boolean canUse(PlayerEntity player) {

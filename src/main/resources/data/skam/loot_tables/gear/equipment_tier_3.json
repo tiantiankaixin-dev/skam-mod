@@ -1,0 +1,189 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.diamond_sword" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:14}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_damage", "name": "Epic Damage", "amount": { "min": 0.25, "max": 0.35 }, "operation": "multiply_base", "slot": "mainhand", "id": "33333333-aaaa-4aaa-aaaa-333333333333" },
+              { "attribute": "minecraft:generic.attack_speed", "name": "Epic Speed", "amount": { "min": 0.10, "max": 0.20 }, "operation": "multiply_base", "slot": "mainhand", "id": "33333333-bbbb-4bbb-bbbb-333333333333" },
+              { "attribute": "minecraft:generic.max_health", "name": "Epic Vitality", "amount": { "min": 0.10, "max": 0.20 }, "operation": "multiply_base", "slot": "mainhand", "id": "33333333-cccc-4ccc-cccc-333333333333" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.netherite_sword" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:15}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_damage", "name": "Legendary Damage", "amount": { "min": 0.25, "max": 0.40 }, "operation": "multiply_base", "slot": "mainhand", "id": "44444444-aaaa-4aaa-aaaa-444444444444" },
+              { "attribute": "minecraft:generic.attack_speed", "name": "Legendary Speed", "amount": { "min": 0.15, "max": 0.25 }, "operation": "multiply_base", "slot": "mainhand", "id": "44444444-bbbb-4bbb-bbbb-444444444444" },
+              { "attribute": "minecraft:generic.movement_speed", "name": "Legendary Swiftness", "amount": { "min": 0.10, "max": 0.25 }, "operation": "multiply_base", "slot": "mainhand", "id": "44444444-cccc-4ccc-cccc-444444444444" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.diamond_axe" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b, CustomModelData:24}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.attack_damage", "name": "Epic Damage", "amount": { "min": 0.30, "max": 0.45 }, "operation": "multiply_base", "slot": "mainhand", "id": "77777777-aaaa-4aaa-aaaa-777777777777" },
+              { "attribute": "minecraft:generic.attack_knockback", "name": "Devastating Swing", "amount": { "min": 1.0, "max": 2.0 }, "operation": "addition", "slot": "mainhand", "id": "77777777-bbbb-4bbb-bbbb-777777777777" },
+              { "attribute": "minecraft:generic.knockback_resistance", "name": "Unflinching", "amount": { "min": 0.15, "max": 0.25 }, "operation": "addition", "slot": "mainhand", "id": "77777777-cccc-4ccc-cccc-777777777777" }
+            ] }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet",
+          "weight": 2,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s","with": [{ "translate": "item.minecraft.diamond_helmet" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Epic Health", "amount": { "min": 0.50, "max": 0.70 }, "operation": "multiply_base", "slot": "head", "id": "55555555-aaaa-4aaa-aaaa-555555555555" },
+              { "attribute": "minecraft:generic.armor", "name": "Epic Armor", "amount": { "min": 4.0, "max": 6.0 }, "operation": "addition", "slot": "head", "id": "55555555-bbbb-4bbb-bbbb-555555555555" },
+              { "attribute": "minecraft:generic.attack_damage", "name": "Warlord's Command", "amount": { "min": 0.10, "max": 0.15 }, "operation": "multiply_base", "slot": "head", "id": "55555555-cccc-4ccc-cccc-555555555555" },
+              { "attribute": "minecraft:generic.attack_knockback", "name": "Impact", "amount": { "min": 0.5, "max": 1.0 }, "operation": "addition", "slot": "head", "id": "55555555-dddd-4ddd-dddd-555555555555" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 2,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.diamond_chestplate" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Epic Health", "amount": { "min": 0.60, "max": 0.90 }, "operation": "multiply_base", "slot": "chest", "id": "66666666-aaaa-4aaa-aaaa-666666666666" },
+              { "attribute": "minecraft:generic.armor_toughness", "name": "Epic Toughness", "amount": { "min": 4.0, "max": 5.0 }, "operation": "addition", "slot": "chest", "id": "66666666-bbbb-4bbb-bbbb-666666666666" },
+              { "attribute": "minecraft:generic.knockback_resistance", "name": "Immovable Object", "amount": { "min": 0.25, "max": 0.40 }, "operation": "addition", "slot": "chest", "id": "6666666-cccc-4ccc-cccc-666666666666" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings",
+          "weight": 2,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate":"%1$s %2$s","with": [{ "translate": "item.minecraft.diamond_leggings" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Epic Health", "amount": { "min": 0.50, "max": 0.80 }, "operation": "multiply_base", "slot": "legs", "id": "77777777-aaaa-4aaa-aaaa-777777777777" },
+              { "attribute": "minecraft:generic.armor", "name": "Epic Armor", "amount": { "min": 5.0, "max": 7.0 }, "operation": "addition", "slot": "legs", "id": "77777777-bbbb-4bbb-bbbb-777777777777" },
+              { "attribute": "minecraft:generic.attack_speed", "name": "Relentless Assault", "amount": { "min": 0.10, "max": 0.15 }, "operation": "multiply_base", "slot": "legs", "id": "77777777-cccc-4ccc-cccc-777777777777" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots",
+          "weight": 2,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.diamond_boots" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.movement_speed", "name": "Epic Speed", "amount": { "min": 0.25, "max": 0.35 }, "operation": "multiply_base", "slot": "feet", "id": "88888888-aaaa-4aaa-aaaa-888888888888" },
+              { "attribute": "minecraft:generic.knockback_resistance", "name": "Unstoppable Force", "amount": { "min": 0.35, "max": 0.50 }, "operation": "addition", "slot": "feet", "id": "88888888-bbbb-4bbb-bbbb-888888888888" },
+              { "attribute": "minecraft:generic.luck", "name": "Divine Fortune", "amount": { "min": 3.0, "max": 5.0 }, "operation": "addition", "slot": "feet", "id": "88888888-cccc-4ccc-cccc-888888888888" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with": [{ "translate": "item.minecraft.netherite_helmet" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Legendary Health", "amount": { "min": 0.50, "max": 0.70 }, "operation": "multiply_base", "slot": "head", "id": "99999999-aaaa-4aaa-aaaa-999999999999" },
+              { "attribute": "minecraft:generic.armor", "name": "Legendary Armor", "amount": { "min": 8.0, "max": 12.0 }, "operation": "addition", "slot": "head", "id": "99999999-bbbb-4bbb-bbbb-999999999999" },
+              { "attribute": "minecraft:generic.attack_damage", "name": "Warlord's Command", "amount": { "min": 0.10, "max": 0.15 }, "operation": "multiply_base", "slot": "head", "id": "99999999-cccc-4ccc-cccc-999999999999" },
+              { "attribute": "minecraft:generic.attack_knockback", "name": "Impact", "amount": { "min": 0.5, "max": 1.0 }, "operation": "addition", "slot": "head", "id": "99999999-dddd-4ddd-dddd-999999999999" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b,CustomModelData:1}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with":  [{ "translate": "item.minecraft.netherite_chestplate" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Legendary Health", "amount": { "min": 0.60, "max": 0.90 }, "operation": "multiply_base", "slot": "chest", "id": "AAAAAAAA-aaaa-4aaa-aaaa-AAAAAAAAAAAA" },
+              { "attribute": "minecraft:generic.armor_toughness", "name": "Legendary Toughness", "amount": { "min": 8.0, "max": 10.0 }, "operation": "addition", "slot": "chest", "id": "AAAAAAAA-bbbb-4bbb-bbbb-AAAAAAAAAAAA" },
+              { "attribute": "minecraft:generic.knockback_resistance", "name": "Immovable Object", "amount": { "min": 0.25, "max": 0.40 }, "operation": "addition", "slot": "chest", "id": "AAAAAAAA-cccc-4ccc-cccc-AAAAAAAAAAAA" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b,CustomModelData:1}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with":  [{ "translate": "item.minecraft.netherite_leggings" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.max_health", "name": "Legendary Health", "amount": { "min": 0.50, "max": 0.80 }, "operation": "multiply_base", "slot": "legs", "id": "BBBBBBBB-aaaa-4aaa-aaaa-BBBBBBBBBBBB" },
+              { "attribute": "minecraft:generic.armor", "name": "Legendary Armor", "amount": { "min": 10.0, "max": 14.0 }, "operation": "addition", "slot": "legs", "id": "BBBBBBBB-bbbb-4bbb-bbbb-BBBBBBBBBBBB" },
+              { "attribute": "minecraft:generic.attack_speed", "name": "Relentless Assault", "amount": { "min": 0.10, "max": 0.15 }, "operation": "multiply_base", "slot": "legs", "id": "BBBBBBBB-cccc-4ccc-cccc-BBBBBBBBBBBB" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b,CustomModelData:1}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "weight": 1,
+          "functions": [
+            { "function": "minecraft:set_name", "name": { "translate": "%1$s %2$s", "with":  [{ "translate": "item.minecraft.netherite_boots" }, { "translate": "lore.skam.tier3_suffix" }] } },
+            { "function": "minecraft:set_lore", "lore": [{ "translate": "lore.skam.tier3_line1" }, { "translate": "lore.skam.tier3_line2" }] },
+            { "function": "minecraft:set_attributes", "append": true, "modifiers": [
+              { "attribute": "minecraft:generic.movement_speed", "name": "Legendary Speed", "amount": { "min": 0.25, "max": 0.35 }, "operation": "multiply_base", "slot": "feet", "id": "CCCCCCCC-aaaa-4aaa-aaaa-CCCCCCCCCCCC" },
+              { "attribute": "minecraft:generic.knockback_resistance", "name": "Unstoppable Force", "amount": { "min": 0.35, "max": 0.50 }, "operation": "addition", "slot": "feet", "id": "CCCCCCCC-bbbb-4bbb-bbbb-CCCCCCCCCCCC" },
+              { "attribute": "minecraft:generic.luck", "name": "Divine Fortune", "amount": { "min": 3.0, "max": 5.0 }, "operation": "addition", "slot": "feet", "id": "CCCCCCCC-cccc-4ccc-cccc-CCCCCCCCCCCC" }
+            ] },
+            { "function": "minecraft:set_nbt", "tag": "{Unbreakable:1b,CustomModelData:1}" },
+            { "function": "minecraft:enchant_with_levels", "levels": 30, "treasure": true }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

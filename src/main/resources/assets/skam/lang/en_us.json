@@ -395,5 +395,18 @@
   "item.skam.ice_upgrade": "Ice Upgrade",
   "item.skam.lightning_upgrade": "Lightning Upgrade",
   "item.your_mod_id.frost_blade": "The Power Of Ice",
-  "item.your_mod_id.staff_of_thunder": "Thunder Calling"
+  "item.your_mod_id.staff_of_thunder": "Thunder Calling",
+
+  "lore.skam.tier1_suffix": " (Rare)",
+  "lore.skam.tier2_suffix": " (Treasured)",
+  "lore.skam.tier3_suffix": " (Legendary)",
+
+  "lore.skam.tier1_line1": "§7This equipment has a small core capacity.",
+  "lore.skam.tier1_line2": "§7It provides minor enhancements.",
+
+  "lore.skam.tier2_line1": "§7This equipment contains mysterious power.",
+  "lore.skam.tier2_line2": "§7It provides considerable enhancements.",
+
+  "lore.skam.tier3_line1": "§7A legendary item forged by ancient artisans.",
+  "lore.skam.tier3_line2": "§7It provides powerful enhancements."
 }

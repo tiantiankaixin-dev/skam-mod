@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "comment": "中级物品",
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:iron_sword", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:iron_axe", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:iron_helmet", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:iron_chestplate", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:iron_leggings", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:iron_boots", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:bow", "weight": 8 },
+        { "type": "minecraft:item", "name": "minecraft:shield", "weight": 5 }
+      ]
+    },
+    {
+      "comment": "高级物品",
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:diamond_helmet", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:diamond_chestplate", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:diamond_leggings", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:diamond_boots", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:diamond_sword", "weight": 8 },
+        { "type": "minecraft:item", "name": "minecraft:diamond_pickaxe", "weight": 8 },
+        { "type": "minecraft:item", "name": "minecraft:netherite_helmet", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:netherite_chestplate", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:netherite_leggings", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:netherite_boots", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:netherite_sword", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:netherite_pickaxe", "weight": 1 }
+      ]
+    }
+  ]
+}
+
+
