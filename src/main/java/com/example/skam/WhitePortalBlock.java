@@ -242,7 +242,7 @@ public class WhitePortalBlock extends Block implements Waterloggable { // 实现
         BlockPos below = pos.down();
         if (!world.getBlockState(below).isOpaqueFullCube(world, below)) {
             SkamMod.LOGGER.info("Creating a safety platform at {}", below);
-            world.setBlockState(below, Blocks.STONE.getDefaultState());
+            world.setBlockState(below, Blocks.OBSIDIAN.getDefaultState());
         }
     }
 

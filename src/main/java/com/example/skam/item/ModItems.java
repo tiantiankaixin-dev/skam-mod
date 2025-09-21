@@ -66,6 +66,7 @@ public class ModItems {
 
     // --- 魔法物品 (Magical Items) ---
    public static final Item MAGIC_ENERGY_GEM = registerItem("magic_energy_gem", new MagicEnergyGemItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item DIMENSION_HOPPER = registerItem("dimension_hopper", new DimensionHopperItem(new FabricItemSettings()));
 
     // --- 武器 (Weapons) ---
    public static final Item NETHERITE_FIRE_SWORD = registerItem("netherite_fire_sword", new NetheriteFireSword());

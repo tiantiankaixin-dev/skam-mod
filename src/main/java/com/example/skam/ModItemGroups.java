@@ -107,6 +107,7 @@ public class ModItemGroups {
                             entries.add(SkamMod.SWORD_SHEATH);
                             entries.add(ModItems.STANCE_GENERATOR);
                             entries.add(ModItems.ORE_DETECTOR);
+                            entries.add(ModItems.DIMENSION_HOPPER);
                             entries.add(ModItems.LEVEL_1_ARCHER_CORE);
                             entries.add(ModItems.LEVEL_2_ARCHER_CORE);
                             entries.add(ModItems.LEVEL_3_ARCHER_CORE);
