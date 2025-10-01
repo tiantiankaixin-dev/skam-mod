@@ -8,6 +8,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.*;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 
@@ -22,6 +23,10 @@ public class ForgingTableScreenHandler extends ScreenHandler {
     private static final int PLAYER_INVENTORY_START_INDEX = 3;
     private static final int PLAYER_INVENTORY_END_INDEX = 39;
 
+
+    public ForgingTableScreenHandler(int syncId, PlayerInventory playerInventory, PacketByteBuf buf) {
+        this(syncId, playerInventory, new SimpleInventory(3));
+    }
 
     public ForgingTableScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, new SimpleInventory(3));

@@ -1,6 +1,6 @@
 package com.example.skam.mixin;
 
-import com.example.skam.SkamMod;
+import com.example.skam.util.ModUtils;
 import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.util.hit.EntityHitResult;
 import org.spongepowered.asm.mixin.Mixin;
@@ -17,7 +17,6 @@ public abstract class TridentEntityBoomMixin {
     )
     private void onEntityHitExplosion(EntityHitResult entityHitResult, CallbackInfo ci) {
        TridentEntity trident = (TridentEntity) (Object) this;
-  SkamMod.createExplosiveImpact(trident);
+  ModUtils.createExplosiveImpact(trident);
     }
 }
-

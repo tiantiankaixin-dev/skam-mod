@@ -1,6 +1,7 @@
 
 package com.example.skam;
 
+import com.example.skam.block.ModBlocks;
 import net.minecraft.world.BlockView;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.block.Waterloggable;
@@ -102,7 +103,7 @@ public class WhitePortalBlock extends Block implements Waterloggable { // 实现
                 continue;
             }
 
-            if (player.getBlockStateAtPos().isOf(SkamMod.WHITE_PORTAL_BLOCK)) {
+            if (player.getBlockStateAtPos().isOf(ModBlocks.WHITE_PORTAL_BLOCK)) {
                 long timeEntered = PLAYERS_IN_PORTAL.get(playerId);
                 if (currentTime >= timeEntered + PORTAL_DELAY_TICKS) {
                     SkamMod.LOGGER.info("Teleporting player {}.", player.getName().getString());
@@ -161,7 +162,7 @@ public class WhitePortalBlock extends Block implements Waterloggable { // 实现
             for (int x = searchX - 16; x <= searchX + 16; x++) {
                 for (int z = searchZ - 16; z <= searchZ + 16; z++) {
                     searchPos.set(x, y, z);
-                    if (world.getBlockState(searchPos).isOf(SkamMod.WHITE_PORTAL_BLOCK)) {
+                    if (world.getBlockState(searchPos).isOf(ModBlocks.WHITE_PORTAL_BLOCK)) {
                         SkamMod.LOGGER.info("Found existing portal at {}", searchPos.toImmutable());
                         return searchPos.toImmutable();
                     }
@@ -173,7 +174,7 @@ public class WhitePortalBlock extends Block implements Waterloggable { // 实现
         SkamMod.LOGGER.info("No existing portal found. Creating a new one...");
         BlockPos safePos = findSafeLocation(world, new BlockPos(searchX, 128, searchZ));
         if (safePos != null) {
-            world.setBlockState(safePos, SkamMod.WHITE_PORTAL_BLOCK.getDefaultState());
+            world.setBlockState(safePos, ModBlocks.WHITE_PORTAL_BLOCK.getDefaultState());
             ensureSafePlatform(world, safePos);
             SkamMod.LOGGER.info("Created new portal at {}", safePos);
         }

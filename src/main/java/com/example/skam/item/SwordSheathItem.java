@@ -1,6 +1,6 @@
 package com.example.skam.item;
 
-import com.example.skam.SkamMod;
+import com.example.skam.util.ModUtils;
 import com.example.skam.mixin.PersistentProjectileEntityAccessor;
 import com.example.skam.mixin.TridentEntityAccessor;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
@@ -91,7 +91,7 @@ public class SwordSheathItem extends Item {
 
             if (nbt != null && nbt.contains(ownerKey)) {
                 if (((PersistentProjectileEntityAccessor) tridentEntity).isInGround()) {
-                    SkamMod.setChunkForced(world, tridentEntity.getChunkPos(), false);
+                    ModUtils.setChunkForced(world, tridentEntity.getChunkPos(), false);
                 }
 
                 ItemStack retrievedStack = tridentStack.copy();
@@ -133,4 +133,3 @@ public class SwordSheathItem extends Item {
         };
     }
 }
-

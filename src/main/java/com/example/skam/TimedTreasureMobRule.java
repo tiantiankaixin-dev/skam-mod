@@ -1,5 +1,6 @@
 package com.example.skam;
 
+import net.minecraft.nbt.NbtCompound;
 import com.example.skam.item.TreasureSummonerItem;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.LivingEntity;
@@ -9,6 +10,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity; // 确保导入这个类
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -28,7 +30,7 @@ public class TimedTreasureMobRule {
 
     private static int timer = 0;
     // 将间隔改长一点，比如5秒，避免刷屏和过于频繁的检查
-    private static final int TRIGGER_INTERVAL_TICKS = 2400;
+    private static final int TRIGGER_INTERVAL_TICKS = 3600;
 
     public static void register() {
         ServerTickEvents.END_SERVER_TICK.register(TimedTreasureMobRule::onServerTick);
@@ -128,6 +130,7 @@ public class TimedTreasureMobRule {
             targetMob.heal((float) newTotalHealth);
 
             TreasureSummonerItem.equipMobAndSetDrops(world, targetMob, lootTableId);
+
             targetMob.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, -1, 0, false, false));
             TreasureSummonerItem.setupTreasureTeam(world, targetMob, glowColor);
             targetMob.setGlowing(true);

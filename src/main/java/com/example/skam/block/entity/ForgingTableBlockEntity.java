@@ -1,6 +1,7 @@
 // 文件: com/example/skam/block/entity/ForgingTableBlockEntity.java
 package com.example.skam.block.entity;
 
+import com.example.skam.Skam;
 import com.example.skam.item.core.CoreType;
 import com.example.skam.item.core.ICoreItem;
 import com.example.skam.screen.ForgingTableScreenHandler;
@@ -95,7 +96,10 @@ public class ForgingTableBlockEntity extends BlockEntity implements ExtendedScre
     }
     @Override public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {}
     @Override public Text getDisplayName() { return Text.translatable("block.skam.forging_table"); }
-    @Nullable @Override public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) { return new ForgingTableScreenHandler(syncId, playerInventory, this); }
+    @Nullable @Override public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
+        Skam.LOGGER.info("Creating ForgingTableScreenHandler menu.");
+        return new ForgingTableScreenHandler(syncId, playerInventory, this);
+    }
     @Override protected void writeNbt(NbtCompound nbt) { super.writeNbt(nbt); Inventories.writeNbt(nbt, inventory); }
     @Override public void readNbt(NbtCompound nbt) { super.readNbt(nbt); Inventories.readNbt(nbt, inventory); }
     @Override public int size() { return inventory.size(); }

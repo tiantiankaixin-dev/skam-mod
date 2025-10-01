@@ -96,6 +96,8 @@ public class ModItems {
     // --- 工具与功能性物品 (Tools & Utility) ---
     public static final Item HANDHELD_DISPENSER = registerItem("handheld_dispenser", new HandheldDispenserItem(new FabricItemSettings().maxCount(1)));
     public static final Item STANCE_GENERATOR = registerItem("stance_generator", new StanceGeneratorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SWORD_SHEATH = registerItem("sword_sheath", new SwordSheathItem(new FabricItemSettings()));
+    public static final Item CURSED_TRIDENT_ENTITY_ITEM = registerItem("cursed_trident_entity", new Item(new Item.Settings()));
     public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings().maxDamage(100).rarity(Rarity.UNCOMMON)));
     public static final Item FLOATING_SHIP_ITEM = registerItem("floating_ship_item", new FloatingShipItem(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
     public static final Item TELEPORTING_TOTEM = registerItem("teleporting_totem", new TeleportingTotemItem(new FabricItemSettings()));

@@ -1,6 +1,6 @@
 package com.example.skam.mixin;
 
-import com.example.skam.SkamMod;
+import com.example.skam.util.ModUtils;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.entity.projectile.TridentEntity;
@@ -17,7 +17,7 @@ public class PersistentProjectileEntityMixin {
        PersistentProjectileEntity projectile = (PersistentProjectileEntity) (Object) this;
    if (projectile.getType() == EntityType.TRIDENT) {
             TridentEntity trident = (TridentEntity) projectile;
-            SkamMod.createThunderStrike(trident, blockHitResult.getPos());
+            ModUtils.createThunderStrike(trident, blockHitResult.getPos());
         }
     }
 }

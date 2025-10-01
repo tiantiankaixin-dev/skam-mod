@@ -1,6 +1,6 @@
 package com.example.skam.mixin;
 
-import com.example.skam.SkamMod;
+import com.example.skam.util.ModUtils;
 import com.example.skam.item.SwordSheathItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.TridentEntity;
@@ -38,7 +38,7 @@ public abstract class TridentEntityChunkLoaderMixin {
             String ownerKey = SwordSheathItem.getOwnerNbtKey(owner);
            if (nbt.contains(ownerKey)) {
                 if (((PersistentProjectileEntityAccessor) trident).isInGround() && !skam_chunkForced) {
-                    SkamMod.setChunkForced((ServerWorld) trident.getWorld(), trident.getChunkPos(), true);
+                    ModUtils.setChunkForced((ServerWorld) trident.getWorld(), trident.getChunkPos(), true);
                     skam_chunkForced = true;
                 }
             }
@@ -49,7 +49,7 @@ public abstract class TridentEntityChunkLoaderMixin {
     private void onPlayerCollisionUnloadChunk(PlayerEntity player, CallbackInfo ci) {
         TridentEntity trident = (TridentEntity) (Object) this;
         if (((PersistentProjectileEntityAccessor) trident).isInGround() && skam_chunkForced) {
-            SkamMod.setChunkForced((ServerWorld) trident.getWorld(), trident.getChunkPos(), false);
+            ModUtils.setChunkForced((ServerWorld) trident.getWorld(), trident.getChunkPos(), false);
             skam_chunkForced = false;
         }
     }

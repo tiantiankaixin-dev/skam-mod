@@ -1,15 +1,15 @@
 // File Path: src/main/java/com/example/skam/client/SkamModClient.java
 package com.example.skam.client;
 
-import com.example.skam.Skam;
+import com.example.skam.SkamMod;
 import com.example.skam.screen.ForgingTableScreen;
 import com.example.skam.screen.ModScreenHandlers;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
-import com.example.skam.SkamMod;
 import com.example.skam.client.model.FireGodArmorModel;
 import com.example.skam.client.render.*;
 import com.example.skam.client.screen.HandheldDispenserScreen;
+import com.example.skam.client.screen.SwordSheathScreen;
 import com.example.skam.enchantment.ModEnchantments;
 import com.example.skam.entity.ModEntities;
 import com.example.skam.entity.client.FloatingShipRenderer;
@@ -74,7 +74,7 @@ public class SkamModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.FLOATING_SHIP, FloatingShipRenderer::new);
         try {EntityRendererRegistry.register(EntityType.TRIDENT, CursedTridentBlockEntityRenderer::new);} catch (Exception e) {e.printStackTrace();}
    // 模型断言
-        ModelPredicateProviderRegistry.register(SkamMod.SWORD_SHEATH, new Identifier("skam", "filled"), (itemStack, clientWorld, livingEntity, seed) -> {return itemStack.getSubNbt(TRIDENT_KEY) != null ? 1.0f : 0.0f;});
+        ModelPredicateProviderRegistry.register(ModItems.SWORD_SHEATH, new Identifier("skam", "filled"), (itemStack, clientWorld, livingEntity, seed) -> {return itemStack.getSubNbt(TRIDENT_KEY) != null ? 1.0f : 0.0f;});
         registerLegendBowPredicates();
         try {
             ModelPredicateProviderRegistry.register(
@@ -91,7 +91,8 @@ public class SkamModClient implements ClientModInitializer {
 
         // 客户端处理器和屏幕
         FireGodArmorClientHandler.registerClientEvents();
-        HandledScreens.register(SkamMod.HANDHELD_DISPENSER_SCREEN_HANDLER, HandheldDispenserScreen::new); ScreenRegistry.register(SkamMod.SWORD_SHEATH_SCREEN_HANDLER, SwordSheathScreen::new);
+        HandledScreens.register(ModScreenHandlers.HANDHELD_DISPENSER_SCREEN_HANDLER, HandheldDispenserScreen::new);
+        HandledScreens.register(ModScreenHandlers.SWORD_SHEATH_SCREEN_HANDLER, SwordSheathScreen::new);
         HandledScreens.register(ModScreenHandlers.ENCHANTMENT_UPGRADER_SCREEN_HANDLER, EnchantmentUpgraderScreen::new);
         HandledScreens.register(ModScreenHandlers.FORGING_TABLE_SCREEN_HANDLER, ForgingTableScreen::new);
 
@@ -200,4 +201,3 @@ public class SkamModClient implements ClientModInitializer {
 
     // 删除了旧的、未使用的 modifyDemonKingTooltip 方法
 }
-

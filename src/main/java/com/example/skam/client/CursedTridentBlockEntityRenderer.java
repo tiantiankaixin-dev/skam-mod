@@ -1,6 +1,6 @@
 package com.example.skam.client;
 
-import com.example.skam.SkamMod;
+import com.example.skam.item.ModItems;
 import com.example.skam.client.CursedTridentAccess;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;
@@ -76,7 +76,7 @@ public class CursedTridentBlockEntityRenderer extends EntityRenderer<TridentEnti
         // Your original translation and item rendering code is UNCHANGED.
         matrices.translate(0.0, -0.5, 0.0);
         try {
-            ItemStack customModelStack = new ItemStack(SkamMod.CURSED_TRIDENT_ENTITY_ITEM);
+            ItemStack customModelStack = new ItemStack(ModItems.CURSED_TRIDENT_ENTITY_ITEM);
             itemRenderer.renderItem(
                     customModelStack,
                     net.minecraft.client.render.model.json.ModelTransformationMode.GROUND,

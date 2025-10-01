@@ -1,6 +1,6 @@
 package com.example.skam.item;
 
-import com.example.skam.SkamMod;
+import com.example.skam.screen.ModScreenHandlers;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
@@ -25,7 +25,7 @@ public class SwordSheathScreenHandler extends ScreenHandler {
     private static final int PLAYER_INVENTORY_END_INDEX = 37;
 
     public SwordSheathScreenHandler(int syncId, PlayerInventory playerInventory, ItemStack sheathStack) {
-        super(SkamMod.SWORD_SHEATH_SCREEN_HANDLER, syncId);
+        super(ModScreenHandlers.SWORD_SHEATH_SCREEN_HANDLER, syncId);
         this.sheathStack = sheathStack;
         this.inventory = new SimpleInventory(1);
 

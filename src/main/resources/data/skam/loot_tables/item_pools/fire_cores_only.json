@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "skam:level1_fire_core",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level2_fire_core",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level3_fire_core",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level4_fire_core",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level5_fire_core",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

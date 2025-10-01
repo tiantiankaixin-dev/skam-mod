@@ -2,13 +2,96 @@
   "type": "minecraft:entity",
   "pools": [
     {
-    "comment": "品质偏向'神秘'",
-    "rolls": 8,
+      "rolls": 8,
       "entries": [
         {
           "type": "minecraft:loot_table",
           "name": "skam:gear/equipment_tier_2",
-          "weight": 1
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level2_fire_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level2_ice_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level2_lightning_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level_2_archer_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:purification_core_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:vampire_core_lvl_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:strength_core_lv2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level3_fire_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level3_ice_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level3_lightning_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level_3_archer_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:purification_core_3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:vampire_core_lvl_3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:strength_core_lv3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level4_fire_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level4_ice_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level4_lightning_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:level_4_archer_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:purification_core_4"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:vampire_core_lvl_4"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skam:strength_core_lv4"
         }
       ],
       "conditions": [
@@ -18,9 +101,13 @@
           "looting_multiplier": 1
         }
       ],
-    "functions": [
-      { "function": "skam:set_random_core_capacity", "min_capacity": 3, "max_capacity": 5 }
-    ]
+      "functions": [
+        {
+          "function": "skam:set_random_core_capacity",
+          "min_capacity": 3,
+          "max_capacity": 5
+        }
+      ]
     }
   ]
 }

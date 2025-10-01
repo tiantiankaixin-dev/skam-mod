@@ -2,6 +2,7 @@
 package com.example.skam.block;
 
 import com.example.skam.SkamMod;
+import com.example.skam.WhitePortalBlock;
 import com.example.skam.block.custom.ForgingTableBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -21,6 +22,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 public class ModBlocks {
 
 
+    public static Block FORGING_TABLE;
     public static Block ENCHANTMENT_UPGRADER_BLOCK;
     public static Block BURNING_GOLD_ORE;
     public static Block FROST_IRON_ORE;
@@ -33,13 +35,23 @@ public class ModBlocks {
     public static final Block THUNDER_BLOCK = registerBlock("thunder_block",
             new Block(FabricBlockSettings.create().strength(5.0f, 6.0f).requiresTool()));
 
-
-    public static final Block FORGING_TABLE = registerBlock("forging_table",
-            new ForgingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)));
+    public static final Block WHITE_PORTAL_BLOCK = registerBlock("white_portal_block",
+            new WhitePortalBlock(
+                    FabricBlockSettings.create()
+                            .mapColor(MapColor.WHITE)
+                            .strength(-1.0F)
+                            .luminance(15)
+                            .noCollision()
+                            .nonOpaque()
+                            .sounds(BlockSoundGroup.GLASS)
+            ));
 
 
     public static void registerModBlocks() {
         SkamMod.LOGGER.info("Registering Mod Blocks for " + SkamMod.MOD_ID);
+
+        FORGING_TABLE = registerBlock("forging_table",
+                new ForgingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)));
 
         ENCHANTMENT_UPGRADER_BLOCK = registerBlock("enchantment_upgrader_block",
                 new EnchantmentUpgraderBlock(FabricBlockSettings.copyOf(Blocks.ANVIL)));

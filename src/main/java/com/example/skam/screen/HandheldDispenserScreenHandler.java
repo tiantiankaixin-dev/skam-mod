@@ -1,8 +1,8 @@
 package com.example.skam.screen;
 
-import com.example.skam.SkamMod;
 import com.example.skam.item.HandheldDispenserItem;
 import net.minecraft.entity.player.PlayerEntity;
+import com.example.skam.screen.ModScreenHandlers;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
@@ -15,7 +15,7 @@ public class HandheldDispenserScreenHandler extends ScreenHandler {
     private final SimpleInventory inventory;
     private final ItemStack dispenserStack;
     public HandheldDispenserScreenHandler(int syncId, PlayerInventory playerInventory, ItemStack dispenserStack) {
-        super(SkamMod.HANDHELD_DISPENSER_SCREEN_HANDLER, syncId);
+        super(ModScreenHandlers.HANDHELD_DISPENSER_SCREEN_HANDLER, syncId);
         this.dispenserStack = dispenserStack;
         this.inventory = new SimpleInventory(9);
 

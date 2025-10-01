@@ -104,7 +104,7 @@ public class ModItemGroups {
                             entries.add(ModItems.SOUL_LINK_CHARM);
                             entries.add(ModItems.LEGEND_BOW);
                             entries.add(ModItems.HANDHELD_DISPENSER);
-                            entries.add(SkamMod.SWORD_SHEATH);
+                            entries.add(ModItems.SWORD_SHEATH);
                             entries.add(ModItems.STANCE_GENERATOR);
                             entries.add(ModItems.ORE_DETECTOR);
                             entries.add(ModItems.DIMENSION_HOPPER);
@@ -191,7 +191,7 @@ public class ModItemGroups {
                             entries.add(ModItems.FLAME_EMPEROR_SPAWN_EGG);
                             entries.add(ModItems.ICE_EMPEROR_SPAWN_EGG);
                             entries.add(ModItems.LIGHTNING_EMPEROR_SPAWN_EGG);
-                            entries.add(SkamMod.WHITE_PORTAL_BLOCK);
+                            entries.add(ModBlocks.WHITE_PORTAL_BLOCK);
                             entries.add(ModItems.TREASURE_SUMMONER);
                         })
 

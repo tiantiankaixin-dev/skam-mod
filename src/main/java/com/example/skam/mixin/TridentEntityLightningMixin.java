@@ -1,6 +1,6 @@
 package com.example.skam.mixin;
 
-import com.example.skam.SkamMod;
+import com.example.skam.util.ModUtils;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.util.hit.EntityHitResult;
@@ -15,7 +15,7 @@ public abstract class TridentEntityLightningMixin {
     private void onEntityHitMixin(EntityHitResult entityHitResult, CallbackInfo ci) {
         TridentEntity trident = (TridentEntity) (Object) this;
         Entity target = entityHitResult.getEntity();
-        SkamMod.createThunderStrike(trident, target.getPos());
+        ModUtils.createThunderStrike(trident, target.getPos());
     }
 
 }
