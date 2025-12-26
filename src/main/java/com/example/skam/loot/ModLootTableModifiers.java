@@ -84,7 +84,7 @@ public class ModLootTableModifiers {
             // --- Other Mods Logic ---
             if (!namespace.equals("minecraft") && !namespace.equals("skam") 
                 && id.getPath().startsWith("chests/")) {
-                tableBuilder.pool(buildPool(UNCOMMON_TREASURE, 0.05f));
+                tableBuilder.pool(buildPool(UNCOMMON_TREASURE, 0.2f));
             }
         });
     }
