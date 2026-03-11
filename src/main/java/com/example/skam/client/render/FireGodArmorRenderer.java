@@ -1,6 +1,6 @@
 package com.example.skam.client.render;
 
-import com.example.skam.SkamMod;
+import com.example.skam.client.SkamModClient;
 import com.example.skam.client.model.FireGodArmorModel;
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderer;
 import net.minecraft.client.MinecraftClient;
@@ -25,7 +25,7 @@ public class FireGodArmorRenderer implements ArmorRenderer {
     public void render(MatrixStack matrices, VertexConsumerProvider vertexConsumers, ItemStack stack, LivingEntity entity, EquipmentSlot slot, int light, BipedEntityModel<LivingEntity> contextModel) {
 
         if (this.armorModel == null) {
-            this.armorModel = new FireGodArmorModel<>(MinecraftClient.getInstance().getEntityModelLoader().getModelPart(SkamMod.FIRE_GOD_ARMOR_LAYER));
+            this.armorModel = new FireGodArmorModel<>(MinecraftClient.getInstance().getEntityModelLoader().getModelPart(SkamModClient.FIRE_GOD_ARMOR_LAYER));
         }
 
         contextModel.copyBipedStateTo(this.armorModel);

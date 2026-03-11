@@ -1,7 +1,6 @@
 package com.example.skam.item.armor;
 
 import com.example.skam.effect.ModEffects;
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -104,7 +103,7 @@ public class ThunderGodArmorItem extends ArmorItem {
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("tooltip.skam.thunder_god_armor.shift_prompt").formatted(Formatting.GRAY));
-        if (Screen.hasShiftDown()) {
+        if (net.minecraft.client.gui.screen.Screen.hasShiftDown()) {
             tooltip.add(Text.literal(""));
             tooltip.add(Text.translatable("tooltip.skam.thunder_god_armor.set_bonus_header").formatted(Formatting.YELLOW));
             tooltip.add(Text.translatable("tooltip.skam.thunder_god_armor.set_bonus_1").formatted(Formatting.GRAY));

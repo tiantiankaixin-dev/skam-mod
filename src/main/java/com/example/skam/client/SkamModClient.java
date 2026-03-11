@@ -118,6 +118,8 @@ public class SkamModClient implements ClientModInitializer {
      */
     private void registerTooltipCallback() {
         ItemTooltipCallback.EVENT.register(this::onRenderDemonKingTooltip);
+        // 注册核心系统的 Tooltip 处理器
+        com.example.skam.tooltip.CoreTooltipHandler.register();
     }
 
     /**

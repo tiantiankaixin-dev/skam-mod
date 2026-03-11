@@ -13,7 +13,6 @@ import com.example.skam.loot.ModLootFunctionTypes;
 import com.example.skam.networking.ModMessages;
 import com.example.skam.potion.ModPotions;
 import com.example.skam.screen.ModScreenHandlers;
-import com.example.skam.tooltip.CoreTooltipHandler;
 import com.example.skam.util.SkamDamageTypes;
 
 public class ModRegistries {
@@ -44,7 +43,6 @@ public class ModRegistries {
         // Register events, commands, and other handlers
         EventRegistry.registerEvents();
         CommandRegistry.registerCommands();
-        CoreTooltipHandler.register();
         TimedTreasureMobRule.register();
     }
 }

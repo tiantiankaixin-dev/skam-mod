@@ -1,6 +1,5 @@
 package com.example.skam.item;
 
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FireballEntity;
@@ -108,26 +107,35 @@ public class ScepterOfTheSolarFlareItem extends Item {
     public int getItemBarStep(ItemStack stack) {
         NbtCompound nbt = stack.getNbt();
         if (nbt != null && nbt.contains(COOLDOWN_END_TICK_KEY)) {
-            // 这个方法只在客户端运行，所以我们可以安全地获取客户端的世界实例
-            World world = net.minecraft.client.MinecraftClient.getInstance().world;
-
-            // 在某些情况（如在主菜单查看物品时），world可能是null，需要检查
-            if (world == null) {
+            // 使用 FabricLoader 检查环境，避免在服务端执行客户端逻辑
+            if (net.fabricmc.api.EnvType.CLIENT != net.fabricmc.loader.api.FabricLoader.getInstance().getEnvironmentType()) {
                 return 0;
             }
 
-            long currentTime = world.getTime(); // 直接从world对象获取时间
-            long cooldownEndTick = nbt.getLong(COOLDOWN_END_TICK_KEY);
-            long remainingTicks = cooldownEndTick - currentTime;
+            // 使用反射获取客户端世界，避免直接引用 MinecraftClient 类
+            try {
+                Class<?> minecraftClientClass = Class.forName("net.minecraft.client.MinecraftClient");
+                Object clientInstance = minecraftClientClass.getMethod("getInstance").invoke(null);
+                World world = (World) minecraftClientClass.getField("world").get(clientInstance);
 
-            if (remainingTicks <= 0) {
-                // 如果冷却结束，我们甚至可以考虑在这里移除NBT标签，以保持物品数据干净
-                // stack.getNbt().remove(COOLDOWN_END_TICK_KEY); // 但这可能会引起并发修改异常，暂时不加
+                if (world == null) {
+                    return 0;
+                }
+
+                long currentTime = world.getTime();
+                long cooldownEndTick = nbt.getLong(COOLDOWN_END_TICK_KEY);
+                long remainingTicks = cooldownEndTick - currentTime;
+
+                if (remainingTicks <= 0) {
+                    return 0;
+                }
+
+                // 计算冷却条的填充比例 (0-13)
+                return Math.round(((float) remainingTicks / (float) COOLDOWN_DURATION_TICKS) * 13.0F);
+            } catch (Exception e) {
+                // 如果反射失败，返回 0
                 return 0;
             }
-
-            // 计算冷却条的填充比例 (0-13)
-            return Math.round(((float) remainingTicks / (float) COOLDOWN_DURATION_TICKS) * 13.0F);
         }
         return 0;
     }
@@ -138,7 +146,7 @@ public class ScepterOfTheSolarFlareItem extends Item {
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, net.minecraft.client.item.TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
 
         NbtCompound nbt = stack.getNbt();
